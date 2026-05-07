@@ -1,0 +1,32 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs & temp
+logs/
+*.log
+
+# Data artifacts (keep test_data/)
+database/orders.db
+data/processed/
+data/quarantine/
+
+# Great Expectations uncommitted artifacts
+great_expectations/uncommitted/
+great_expectations/expectations/*.json
+
+# Environment
+.env
+.env.local

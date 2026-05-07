@@ -1,0 +1,801 @@
+patient_id,patient_name,email,phone,age,gender,blood_type,admission_date,department,diagnosis,total_cost,insurance_provider,discharge_status
+PAT-00001,Aisha Johnson,aisha.johnson@gmail.com,+1-959-381-5012,29,Male,A-,2025-10-17,Neurology,Pneumonia,21385.13,BlueCross,Discharged
+PAT-00002,Patricia Brown,patricia.brown@health.net,+1-816-127-4257,92,Non-Binary,O+,2023-03-28,Emergency,Pneumonia,14270.44,None,Discharged
+PAT-00003,Yuki Tanaka,yuki.tanaka@yahoo.com,+1-914-532-6574,36,Male,B-,2023-11-21,Neurology,Diabetes Type 2,19306.4,Cigna,Deceased
+PAT-00004,Elizabeth Jones,N/A,+1-947-570-9785,16,Female,A-,,Pediatrics,Pneumonia,44329.86,Cigna,Transferred
+PAT-00005,Raj Johnson,raj.johnson@gmail.com,+1-877-333-5741,11,Male,A-,2024-02-18,Unknown,COVID-19,31966.38,Cigna,Transferred
+PAT-00006,Jennifer Garcia,jennifer.garcia@yahoo.com,+1-886-373-2169,78,Non-Binary,B+,2024-12-29,oncollogy,Fracture,null,Cigna,Transferred
+PAT-00007,Aisha Garcia,aisha.garcia@gmail.com,+1-434-941-1525,41,Female,AB+,2022-05-16,Oncology,Pneumonia,43880.2,Cigna,Transferred
+PAT-00008,Aisha Davis,aisha.davis@hospital.org,+1-858-569-3340,34,Male,B-,2025-02-23,Pediatrics,Pneumonia,21707.47,Medicare,Under Observation
+PAT-00009,Jennifer Brown,jennifer.brown@yahoo.com,+1-721-605-2489,7,Male,B+,2025-07-09,Orthopedics,Anemia,30022.25,UnitedHealth,Under Observation
+PAT-00010,Elizabeth Davis,elizabeth.davis@health.net,+1-457-666-1188,88,Non-Binary,A-,2025-10-28,Pediatrics,Bronchitis,-1976.0,UnitedHealth,Transferred
+PAT-00011,Linda Smith,linda.smith@outlook.com,+1-712-880-3927,65,Male,AB+,2025-08-01,,Fracture,none,Aetna,Discharged
+PAT-00012,Elizabeth Garcia,elizabeth.garcia@hospital.org,+1-219-214-6947,40,Male,A+,2030-12-25,Neurology,Diabetes Type 2,-3253.97,None,Discharged
+PAT-00013,Yuki Rodriguez,yuki.rodriguez@yahoo.com,+1-331-775-8787,71,Male,AB+,2024-12-16,Radiology,Migraine,46481.22,None,Transferred
+PAT-00014,Raj Jones,raj.jones@hospital.org,+1-887-765-7118,57,Non-Binary,O-,2022-09-05,Oncology,Migraine,3669.28,BlueCross,Transferred
+PAT-00015,Elizabeth Brown,@nodomain,+1-272-824-1964,30,Male,A+,2023-11-08,Neurology,Flu,12281.23,Medicaid,Under Observation
+PAT-00016,Patricia Rodriguez,patricia.rodriguez@yahoo.com,+1-940-684-8744,32,Female,O+,2023-01-25,Neurology,Diabetes Type 2,33119.65,Cigna,Under Observation
+PAT-00017,Michael Davis,@nodomain,+1-889-769-2612,8,Female,AB-,2022-08-12,ORTHO,TBD,9915.34,UnitedHealth,Transferred
+PAT-00464,Michael Williams,michael.williams@outlook.com,+1-673-355-2235,57,Non-Binary,A-,2022-04-14,Cardiology,Diabetes Type 2,46355.17,None,Transferred
+PAT-00019,Robert Miller,robert.miller@hospital.org,+1-692-318-7570,8,Male,O+,2022-01-05,Radiology,Asthma,46362.64,None,Under Observation
+PAT-00020,John Miller,john.miller@health.net,+1-877-835-8973,20,Male,AB+,2023-03-22,Cardiology,Pneumonia,36918.99,BlueCross,Deceased
+PAT-00021,James Smith,james.smith@health.net,+1-688-614-9701,21,Male,A-,2023-01-16,Neurology,Pneumonia,3864.06,None,Transferred
+PAT-00022,Michael Johnson,michael.johnson@health.net,+1-452-692-1651,unknown,Male,O+,2025-09-08,Dermatology,Asthma,10610.83,Medicaid,Deceased
+PAT-00023,Patricia Jones,patricia.jones@hospital.org,+1-334-787-5915,59,Female,A-,2022-01-20,Emergency,Pneumonia,49923.49,BlueCross,Discharged
+PAT-00024,David Brown,david.brown@health.net,+1-471-235-6718,9,Male,AB-,2023-08-07,Orthopedics,COVID-19,???,Medicaid,Deceased
+PAT-00025,Elizabeth Tanaka,elizabeth.tanaka@health.net,+1-208-783-5905,85,Male,B+,2023-06-26,Neurology,Diabetes Type 2,37249.63,Aetna,Deceased
+PAT-00026,John Martinez,john.martinez@yahoo.com,+1-934-451-4335,88,Non-Binary,AB+,2024-11-01,Emergency,Asthma,45314.16,None,Discharged
+PAT-00027,Mary Patel,mary.patel@hospital.org,+1-483-145-1058,43,Male,AB+,31/13/2024,Emergency,Flu,35430.54,Medicare,Discharged
+PAT-00028,Mary Johnson,mary.johnson@yahoo.com,+1-758-136-7049,75,Non-Binary,B+,2024-05-30,Orthopedics,Hypertension,15758.79,None,Discharged
+PAT-00029,Fatima Garcia,fatima.garcia@yahoo.com,+1-898-355-2684,46,Non-Binary,O+,2030-12-25,Orthopedics,Migraine,43297.98,None,Transferred
+PAT-00030,Fatima Miller,fatima.miller@gmail.com,+1-383-854-6442,53,Non-Binary,B-,2023-07-01,Cardiolgy,N/A,19435.82,BlueCross,Under Observation
+PAT-00031,Patricia Brown,patricia.brown@hospital.org,+1-558-412-4728,29,Male,B-,2024-03-27,Dermatology,Asthma,-4428.46,None,Deceased
+PAT-00032,Jennifer Patel,jennifer.patel@health.net,+1-609-795-9785,200,Male,A-,2023-06-19,Orthopedics,Pneumonia,48145.45,Cigna,Discharged
+PAT-00033,Mary Martinez,mary.martinez@hospital.org,+1-553-846-6139,56,Non-Binary,A-,2024-02-28,Oncology,Asthma,null,UnitedHealth,Discharged
+PAT-00034,David Ali,david.ali@health.net,+1-903-836-4228,47,Female,A-,2025-09-22,Dermatology,Pneumonia,16038.82,None,Discharged
+PAT-00035,Raj Ali,raj.ali@outlook.com,+1-719-416-7691,42,Female,AB+,2025-02-09,Orthopedics,Migraine,-1711.46,UnitedHealth,Transferred
+PAT-00036,Elizabeth Martinez,elizabeth.martinez@outlook.com,+1-615-661-1006,39,Female,B-,2024-05-30,Dermatology,COVID-19,22368.41,Medicaid,Transferred
+PAT-00037,David Davis,david.davis@yahoo.com,+1-874-186-5649,66,Non-Binary,AB-,2022-07-11,Oncology,Asthma,11619.71,Aetna,Transferred
+PAT-00038,James Smith,@nodomain,+1-686-725-2193,59,Female,B-,2025-11-27,neuro,COVID-19,20282.82,Aetna,Discharged
+PAT-00039,Fatima Tanaka,fatima.tanaka@gmail.com,+1-997-535-4585,23,Non-Binary,O-,2022-04-13,Oncology,Diabetes Type 2,23094.86,None,Under Observation
+PAT-00040,Aisha Rodriguez,aisha.rodriguez@health.net,+1-809-424-8251,79,Non-Binary,O+,2025-01-27,Emergency,Fracture,37310.94,UnitedHealth,Under Observation
+PAT-00041,John Tanaka,john.tanaka@yahoo.com,+1-852-383-9540,63,Non-Binary,B-,2023-07-17,N/A,Diabetes Type 2,35820.47,Aetna,Deceased
+PAT-00042,Jennifer Garcia,jennifer.garcia@health.net,+1-282-241-3471,30,Female,B+,2025-12-17,Oncology,Diabetes Type 2,21035.96,Cigna,Under Observation
+PAT-00043,Michael Smith,michael.smith@yahoo.com,,74,Female,O-,2022-01-13,Dermatology,Asthma,37797.02,None,Under Observation
+PAT-00044,David Kim,david.kim@health.net,+1-817-325-8999,29,Female,O+,2024-09-21,Cardiology,Anemia,17138.41,Medicaid,Under Observation
+PAT-00045,Raj Williams,raj.williams@hospital.org,+1-330-737-9751,4,Female,A+,2022-06-21,Radiology,Fracture,43409.14,Aetna,Discharged
+PAT-00046,John Miller,john.miller@outlook.com,+1-416-565-6355,44,Female,AB+,2024-05-13,Pediatrics,Diabetes Type 2,23780.19,Medicaid,Discharged
+PAT-00344,Jennifer Brown,jennifer.brown@gmail.com,+1-999-767-1659,4,Male,B-,2022-02-11,Orthopedics,Migraine,6747.94,Medicaid,Discharged
+PAT-00048,Elizabeth Brown,elizabeth.brown@hospital.org,+1-916-362-7043,22,Non-Binary,A-,2022-12-02,Pediatrics,Diabetes Type 2,29144.89,Cigna,Under Observation
+PAT-00049,Michael Kim,michael.kim@yahoo.com,+1-277-706-4978,14,Non-Binary,AB+,2025-11-02,Unknown,Pneumonia,39240.45,Cigna,Under Observation
+PAT-00050,Aisha Garcia,aisha.garcia@gmail.com,+1-718-763-6590,2,Female,O-,2022-08-05,Radiology,Bronchitis,31961.46,None,Under Observation
+PAT-00051,Raj Williams,raj.williams@hospital.org,+1-380-851-9548,84,Female,O-,2024-08-10,Radiology,Pneumonia,13785.58,None,Transferred
+PAT-00052,Carlos Ali,carlos.ali@gmail.com,+1-485-561-4995,60,Non-Binary,O+,2023-11-20,Cardiology,COVID-19,42622.17,Aetna,Under Observation
+PAT-00053,Patricia Garcia,patricia.garcia@outlook.com,+1-548-386-5526,72,Male,B-,2099-01-01,Oncology,Anemia,24684.6,None,Transferred
+PAT-00054,Raj Davis,raj.davis@hospital.org,+1-658-911-1282,12,Female,B-,2024-04-08,XYZ,Asthma,33366.02,Cigna,Under Observation
+PAT-00055,David Rodriguez,david.rodriguez@outlook.com,+1-635-863-6419,46,Non-Binary,O-,2023-07-09,Pediatrics,Asthma,11911.63,Medicaid,Transferred
+PAT-00056,Jennifer Johnson,jennifer.johnson@health.net,+1-980-806-4033,25,Male,O-,2023-07-21,Pediatrics,Diabetes Type 2,41715.1,Cigna,Transferred
+PAT-00057,Jennifer Williams,jennifer.williams@outlook.com,+1-214-825-9751,17,Female,A+,2022-04-22,Pediatrics,Fracture,32074.55,None,Under Observation
+PAT-00058,Mary Chen,mary.chen@gmail.com,+1-787-391-8690,62,Female,AB-,2023-01-13,Cardiology,Asthma,47082.65,UnitedHealth,Discharged
+PAT-00059,Carlos Johnson,carlos.johnson@hospital.org,+1-703-175-1878,20,Male,AB+,2022-06-24,Oncology,Diabetes Type 2,28124.62,UnitedHealth,Transferred
+PAT-00060,Yuki Rodriguez,yuki.rodriguez@hospital.org,+1-661-553-5871,76,Female,AB+,2025-03-10,Cardiology,Pneumonia,48025.38,BlueCross,Transferred
+PAT-00061,Aisha Brown,aisha.brown@outlook.com,+1-876-183-3573,31,Male,A-,2022-11-17,Cardiology,Anemia,22799.93,Medicare,Under Observation
+PAT-00062,John Smith,john.smith@yahoo.com,+1-495-823-5632,90,Female,A-,2025-11-08,Oncology,Asthma,39497.49,Medicaid,Transferred
+PAT-00063,Michael Johnson,michael.johnson@health.net,+1-430-763-3441,35,Male,A-,2022-05-03,Orthopedics,Asthma,29954.68,None,Deceased
+PAT-00064,Linda Johnson,linda.johnson@hospital.org,+1-905-411-7594,35,Non-Binary,O-,2024-06-15,Neurology,Pneumonia,2473.11,UnitedHealth,Deceased
+PAT-00065,Elizabeth Jones,elizabeth.jones@gmail.com,+1-293-334-1339,87,Female,A+,2022-12-25,Emergency,Flu,32749.72,Cigna,Transferred
+PAT-00066,Elizabeth Miller,elizabeth.miller@hospital.org,+1-293-581-6700,53,Female,AB-,2025-10-04,Neurology,Fracture,16825.28,Medicaid,Under Observation
+PAT-00067,John Patel,john.patel@hospital.org,+1-978-663-1601,59,Male,AB-,2023-06-01,Dermatology,Diabetes Type 2,48524.14,UnitedHealth,Discharged
+PAT-00068,Aisha Chen,aisha.chen@health.net,+1-673-523-1888,25,Non-Binary,AB-,2025-06-29,Emergency,COVID-19,38119.53,Aetna,Deceased
+PAT-00069,David Williams,david.williams@outlook.com,+1-648-815-8941,16,Male,B-,2025-12-24,Orthopedics,Asthma,27766.53,Medicare,Under Observation
+PAT-00070,Mary Brown,mary.brown@gmail.com,+1-672-220-3522,64,Non-Binary,AB+,2024-11-08,Pediatrics,Anemia,41818.84,UnitedHealth,Transferred
+PAT-00071,Linda Rodriguez,linda.rodriguez@yahoo.com,+1-592-295-9327,18,Male,AB+,2024-04-29,Dermatology,Hypertnsion,13725.05,BlueCross,Deceased
+PAT-00072,Raj Jones,raj.jones@health.net,+1-793-775-9022,20,,O-,2023-12-08,,Flu,38262.2,UnitedHealth,Under Observation
+PAT-00073,Fatima Garcia,fatima.garcia@yahoo.com,+1-914-344-7274,30,Female,A+,2023-10-14,Emergency,Anemia,19610.9,Medicaid,Transferred
+PAT-00074,Linda Smith,linda.smith@yahoo.com,+1-714-704-6439,13,Female,A-,2024-12-13,Emergency,Hypertension,36260.97,UnitedHealth,Transferred
+PAT-00075,Mary Davis,mary.davis@outlook.com,+1-546-738-7512,84,Male,AB-,2025-10-13,Radiology,Bronchitis,-1065.9,None,Under Observation
+PAT-00076,Carlos Rodriguez,carlos.rodriguez@gmail.com,+1-832-170-4846,81,Non-Binary,AB+,2023-04-11,Neurology,Anemia,MISSING,None,Discharged
+PAT-00077,Linda Williams,linda.williams@outlook.com,+1-229-147-6314,8,Female,AB-,2024-02-07,Radiology,Fracture,12587.77,UnitedHealth,Transferred
+PAT-00078,Robert Williams,robert.williams@gmail.com,+1-824-991-7267,80,Non-Binary,B-,2024-10-16,Orthopedics,Migraine,23326.92,Cigna,Under Observation
+PAT-00079,John Patel,john.patel@gmail.com,+1-676-394-9955,21,Male,O-,2023-12-09,Pediatrics,Anemia,MISSING,UnitedHealth,Deceased
+PAT-00080,Patricia Miller,patricia.miller@hospital.org,+1-309-342-7248,74,Female,AB+,2025-12-03,Pediatrics,Hypertension,48908.25,Medicaid,Under Observation
+PAT-00081,John Smith,john.smith@health.net,+1-902-896-1803,78,Non-Binary,O-,2023-08-10,Oncology,Pneumonia,40195.63,Aetna,Transferred
+PAT-00082,Elizabeth Jones,elizabeth.jones@yahoo.com,+1-843-199-1645,40,Female,A+,2025-04-01,Unknown,Fracture,4961.6,Cigna,Deceased
+PAT-00083,Raj Miller,raj.miller@yahoo.com,+1-405-235-9837,47,Non-Binary,AB+,2022-12-03,Pediatrics,COVID-19,48385.51,Cigna,Deceased
+PAT-00084,Yuki Johnson,yuki.johnson@hospital.org,+1-277-244-4696,87,Non-Binary,O+,2025-02-15,Dermatology,Diabetes Type 2,39638.76,BlueCross,Deceased
+PAT-00085,David Johnson,david.johnson@hospital.org,+1-577-788-5295,75,Female,AB-,2022-08-10,Oncology,COVID-19,1738.72,Medicare,Deceased
+PAT-00086,Fatima Martinez,fatima.martinez@yahoo.com,+1-863-164-8606,90,Female,O+,2022-08-27,Orthopedics,Hypertension,47339.95,Cigna,Under Observation
+PAT-00087,Mary Johnson,mary.johnson@yahoo.com,+1-750-238-7367,59,Female,O+,2025-04-17,Orthopedics,something_wrong,32918.63,None,Under Observation
+PAT-00088,Elizabeth Miller,elizabeth.miller@outlook.com,+1-233-806-7070,28,Female,O-,2023-04-29,Dermatology,Diabetes Type 2,49055.92,Cigna,Deceased
+PAT-00089,James Miller,james.miller@outlook.com,+1-394-225-8450,12,Non-Binary,B-,2025-08-07,Cardiology,Hypertension,39446.33,Aetna,Transferred
+PAT-00090,Yuki Martinez,yuki.martinez@yahoo.com,+1-270-949-4394,76,Male,B-,2023-11-04,Orthopedics,Pneumonia,640.36,None,Transferred
+PAT-00091,Robert Rodriguez,robert.rodriguez@outlook.com,+1-378-212-1422,17,Male,AB-,2023-05-03,,Hypertension,9125.19,BlueCross,Transferred
+PAT-00092,Raj Miller,raj.miller@health.net,+1-316-863-2041,61,Female,AB-,2024-11-17,Neurology,COVID-19,25440.02,Medicare,Discharged
+PAT-00093,Raj Tanaka,raj.tanaka@health.net,+1-508-569-1510,8,Female,O+,2024-05-23,Neurology,COVID-19,35763.87,UnitedHealth,Discharged
+PAT-00094,Fatima Johnson,fatima.johnson@outlook.com,+1-822-251-2076,17,Female,AB-,2024-02-20,Pediatrics,COVID-19,25524.78,UnitedHealth,Discharged
+PAT-00095,Yuki Kim,yuki.kim@gmail.com,+1-870-766-4522,56,Female,B-,2024-04-27,Dermatology,COVID-19,20237.14,Medicaid,Discharged
+PAT-00096,Jennifer Miller,jennifer.miller@outlook.com,+1-881-361-7132,20,Non-Binary,O-,31/13/2024,Neurology,Diabetes Type 2,5114.89,BlueCross,Deceased
+PAT-00014,Yuki Williams,,+1-261-700-6400,86,Male,O+,2023-12-26,Radiology,Hypertension,48435.73,Medicare,Deceased
+PAT-00098,Jennifer Johnson,jennifer.johnson@health.net,+1-719-317-3535,85,Female,B-,2022-08-10,ORTHO,Flu,18694.27,None,Deceased
+PAT-00099,Elizabeth Brown,elizabeth.brown@hospital.org,+1-774-885-1430,78,Non-Binary,AB+,2022-03-01,Orthopedics,Asthma,35283.59,Cigna,Deceased
+PAT-00100,Jennifer Smith,notanemail,+1-346-679-7566,9,Male,A+,2022-07-07,Oncology,Anemia,21281.71,Cigna,Transferred
+PAT-00101,Jennifer Jones,jennifer.jones@outlook.com,+1-995-681-2391,7,Male,B+,2025-06-19,Cardiology,Diabetes Type 2,13969.09,Medicaid,Under Observation
+PAT-00102,Linda Martinez,linda.martinez@hospital.org,+1-624-379-4531,66,Male,AB-,not-a-date,Neurology,Asthma,34071.79,Medicare,Under Observation
+PAT-00362,David Patel,david.patel@outlook.com,+1-246-325-7475,77,Male,A+,2023-02-23,Pediatrics,Migraine,38483.8,None,Deceased
+PAT-00104,John Garcia,john.garcia@gmail.com,+1-207-609-8055,23,Male,O+,2024-12-26,Oncology,Flu,28156.82,Medicaid,Deceased
+PAT-00105,Mary Miller,mary.miller@gmail.com,+1-646-119-8532,10,Female,O+,2025-03-20,Radiology,N/A,14831.0,UnitedHealth,Discharged
+PAT-00106,Jennifer Williams,jennifer.williams@health.net,+1-671-951-6928,12,Female,A-,2023-05-14,oncollogy,Pneumonia,20322.27,BlueCross,Under Observation
+PAT-00107,Carlos Jones,carlos.jones@outlook.com,+1-426-441-3754,10,Non-Binary,A-,2024-12-22,Oncology,Bronchitis,17879.44,None,Transferred
+PAT-00108,Patricia Johnson,patricia.johnson@yahoo.com,+1-462-302-3842,78,Male,A-,2022-12-29,oncollogy,COVID-19,37845.07,None,Under Observation
+PAT-00109,Aisha Ali,aisha.ali@health.net,+1-858-750-6295,81,Female,B+,2024-06-19,Neurology,COVID-19,22389.3,Cigna,Deceased
+PAT-00110,Elizabeth Smith,elizabeth.smith@outlook.com,+1-719-175-6085,60,Female,A+,2022-04-27,Dermatology,diabtes,4298.18,None,Discharged
+PAT-00111,Elizabeth Martinez,elizabeth.martinez@health.net,+1-593-573-1672,58,Non-Binary,B-,2023-10-21,Emergency,Flu,7967.62,BlueCross,Under Observation
+PAT-00112,Mary Tanaka,mary.tanaka@outlook.com,+1-931-186-9266,83,Male,A+,2023-05-23,Emergency,COVID-19,26441.39,Medicare,Transferred
+PAT-00754,Jennifer Garcia,jennifer.garcia@outlook.com,+1-596-518-6543,87,Non-Binary,A+,2025-07-16,Dermatology,TBD,16819.69,Medicare,Under Observation
+PAT-00114,John Jones,john.jones@health.net,+1-353-441-2335,75,Non-Binary,B+,2023-12-18,Pediatrics,Anemia,6883.11,Medicaid,Discharged
+PAT-00115,John Rodriguez,john.rodriguez@hospital.org,+1-858-910-6381,17,Non-Binary,A-,2025-08-16,Radiology,Flu,18410.49,Cigna,Deceased
+PAT-00116,Robert Brown,robert.brown@outlook.com,+1-984-597-4145,-10,Male,B+,2022-06-08,Pediatrics,Diabetes Type 2,25630.64,Medicare,Discharged
+PAT-00117,Aisha Garcia,user@@double.com,+1-334-711-7172,20,Male,B+,2025-11-19,Orthopedics,COVID-19,2662.78,Cigna,Transferred
+PAT-00118,Linda Martinez,linda.martinez@outlook.com,+1-970-866-8355,30,Non-Binary,B-,2023-09-26,Emergency,Migraine,-4313.57,Medicare,Under Observation
+PAT-00119,Linda Tanaka,linda.tanaka@outlook.com,+1-996-491-9239,68,Female,B+,2023-02-13,Orthopedics,Asthma,3082.9,UnitedHealth,Deceased
+PAT-00120,David Ali,david.ali@gmail.com,+1-928-966-9452,16,Female,A-,2022-11-25,Pediatrics,COVID-19,45312.66,Aetna,Under Observation
+PAT-00121,Mary Ali,mary.ali@yahoo.com,+1-661-457-1436,54,Male,O+,2024-10-25,Dermatology,Migraine,TBD,BlueCross,Deceased
+PAT-00122,Patricia Smith,patricia.smith@outlook.com,+1-301-959-6493,19,Male,A+,not-a-date,Emergency,something_wrong,38062.64,UnitedHealth,Under Observation
+PAT-00123,Elizabeth Smith,elizabeth.smith@gmail.com,+1-219-362-4533,20,Non-Binary,O+,2022-08-16,Pediatrics,Migraine,15406.98,BlueCross,Transferred
+PAT-00124,Michael Patel,michael.patel@health.net,+1-668-164-2816,64,Non-Binary,A+,2025-07-18,Oncology,Fracture,14917.96,BlueCross,Deceased
+PAT-00125,Patricia Martinez,patricia.martinez@hospital.org,+1-391-780-2402,68,Female,A-,2024-12-13,neuro,Anemia,???,BlueCross,Under Observation
+PAT-00126,Jennifer Jones,jennifer.jones@gmail.com,12345,45,Male,A-,2025-04-06,Dermatology,Fracture,-1701.69,Medicare,Deceased
+PAT-00127,Carlos Patel,carlos.patel@yahoo.com,+1-997-801-8612,90,Female,B+,2022-10-04,Neurology,COVID-19,2330.7,Aetna,Discharged
+PAT-00128,Yuki Brown,,+1-523-417-9444,51,Non-Binary,O-,2023-06-03,Cardiology,Migraine,14662.49,None,Discharged
+PAT-00129,Carlos Patel,test@.com,+1-479-227-7029,56,Female,O-,2024-03-02,Dermatology,Fracture,25062.06,UnitedHealth,Deceased
+PAT-00130,Fatima Tanaka,fatima.tanaka@health.net,+1-473-920-2353,94,Female,A-,31/13/2024,Orthopedics,Flu,15041.44,BlueCross,Discharged
+PAT-00131,Jennifer Patel,jennifer.patel@outlook.com,+1-513-556-7981,22,Non-Binary,O-,2023-12-21,Emergency,Hypertension,36477.31,Cigna,Under Observation
+PAT-00132,John Patel,john.patel@gmail.com,+1-276-787-7655,47,Non-Binary,B+,2030-12-25,Orthopedics,Pneumonia,34065.4,UnitedHealth,Discharged
+PAT-00133,Robert Johnson,robert.johnson@yahoo.com,+1-997-760-7001,47,Female,A+,2025-05-24,Orthopedics,COVID-19,47466.76,Cigna,Under Observation
+PAT-00134,Yuki Johnson,yuki.johnson@health.net,+1-340-642-7012,51,Female,AB+,2023-05-27,Neurology,Hypertension,36915.91,UnitedHealth,Under Observation
+PAT-00135,Fatima Rodriguez,fatima.rodriguez@gmail.com,+1-468-893-5264,91,Female,B-,2025-06-07,Cardiolgy,COVID-19,10408.83,Aetna,Discharged
+PAT-00136,Linda Williams,linda.williams@hospital.org,+1-289-929-6236,86,Female,A-,2025-01-31,Pediatrics,Asthma,42642.42,Medicaid,Transferred
+PAT-00137,Yuki Garcia,yuki.garcia@health.net,+1-429-224-4292,18,Male,O-,2022-02-23,Dermatology,Flu,28827.73,UnitedHealth,Transferred
+PAT-00138,Elizabeth Ali,elizabeth.ali@gmail.com,+1-267-416-7523,92,Non-Binary,O-,2024-12-12,Radiology,Anemia,41255.3,BlueCross,Transferred
+PAT-00139,Jennifer Patel,jennifer.patel@gmail.com,+1-660-577-9476,45,Male,B+,2022-09-22,Radiology,Flu,45580.26,BlueCross,Discharged
+PAT-00140,David Williams,david.williams@outlook.com,+1-368-265-6286,91,Male,AB-,2024-11-28,Pediatrics,Diabetes Type 2,12904.96,Medicaid,Deceased
+PAT-00141,Robert Patel,robert.patel@outlook.com,+1-829-646-2530,65,Non-Binary,B+,2025-04-27,Orthopedics,Fracture,33107.28,Medicaid,Deceased
+PAT-00142,Carlos Ali,carlos.ali@health.net,+1-242-945-1464,11,Male,AB+,2025-08-26,Oncology,Pneumonia,21121.05,Medicaid,Discharged
+PAT-00143,Linda Ali,linda.ali@health.net,+1-496-757-5949,62,Male,O+,2023-09-02,N/A,Diabetes Type 2,34586.37,Aetna,Under Observation
+PAT-00144,Michael Davis,michael.davis@hospital.org,+1-408-448-3353,41,Non-Binary,AB-,2023-12-09,Radiology,Fracture,38152.92,Medicare,Discharged
+PAT-00145,Jennifer Brown,jennifer.brown@hospital.org,+1-325-373-8366,32,Male,A-,2022-04-14,Pediatrics,Anemia,43276.11,UnitedHealth,Transferred
+PAT-00146,Carlos Ali,carlos.ali@yahoo.com,+1-535-691-6123,200,Male,O-,2024-11-20,Emergency,COVID-19,44014.25,UnitedHealth,Discharged
+PAT-00147,Mary Miller,mary.miller@health.net,+1-668-346-4524,75,Female,A+,2022-04-14,Pediatrics,COVID-19,30077.18,None,Under Observation
+PAT-00148,John Rodriguez,john.rodriguez@gmail.com,+1-310-541-3194,34,Non-Binary,AB-,2024-04-05,Dermatology,Hypertension,20328.79,Medicare,Transferred
+PAT-00149,Jennifer Rodriguez,jennifer.rodriguez@outlook.com,+1-275-495-9261,58,Non-Binary,AB+,2025-06-30,Neurology,Fracture,-2164.06,UnitedHealth,Deceased
+PAT-00150,Yuki Garcia,yuki.garcia@health.net,+1-574-873-3363,26,Non-Binary,O+,2024-10-21,Cardiology,Hypertension,2426.24,Medicaid,Deceased
+PAT-00374,Yuki Davis,yuki.davis@health.net,+1-667-252-9446,18,Female,AB-,2022-11-29,Radiology,,37096.31,Cigna,Deceased
+PAT-00152,David Chen,a@b,+1-745-601-5911,N/A,Male,AB-,2023-11-10,Neurology,Anemia,29393.26,None,Discharged
+PAT-00153,Elizabeth Davis,elizabeth.davis@outlook.com,+1-871-901-4728,93,Male,O-,2022-12-16,Radiology,Fracture,41172.23,Aetna,Discharged
+PAT-00154,Elizabeth Kim,elizabeth.kim@gmail.com,+1-395-119-8225,41,Female,B+,2024-04-25,Oncology,Anemia,25340.07,Medicare,Under Observation
+PAT-00155,Carlos Chen,,+1-922-241-9498,27,Non-Binary,AB-,2025-09-18,Emergency,,19152.83,Aetna,Under Observation
+PAT-00156,Fatima Rodriguez,fatima.rodriguez@outlook.com,+1-759-462-5331,79,Female,B-,2023-05-20,Pediatrics,Flu,15275.71,Cigna,Deceased
+PAT-00157,Raj Brown,raj.brown@hospital.org,+1-524-591-6714,72,Non-Binary,AB+,31/13/2024,Neurology,Pneumonia,???,UnitedHealth,Under Observation
+PAT-00158,Carlos Garcia,carlos.garcia@yahoo.com,+1-497-143-5712,92,Male,AB-,2024-06-24,Pediatrics,COVID-19,11092.35,None,Deceased
+PAT-00159,Fatima Rodriguez,fatima.rodriguez@outlook.com,+1-340-211-4920,32,Male,B-,2025-07-30,Oncology,Hypertension,5459.8,Cigna,Under Observation
+PAT-00160,Mary Patel,mary.patel@yahoo.com,+1-205-663-3587,53,Non-Binary,O-,2024-09-04,Oncology,Asthma,16397.8,Medicaid,Discharged
+PAT-00161,Fatima Tanaka,fatima.tanaka@gmail.com,+1-867-687-4804,69,Non-Binary,A+,2022-12-25,Radiology,Fracture,46729.17,BlueCross,Under Observation
+PAT-00162,Yuki Davis,yuki.davis@yahoo.com,+1-966-993-5742,5,Male,AB+,2025-03-09,Neurology,Bronchitis,14585.8,Medicaid,Under Observation
+PAT-00163,Fatima Williams,fatima.williams@health.net,+1-679-379-4159,15,Female,B+,PENDING,Pediatrics,Fracture,free,Cigna,Deceased
+PAT-00164,Elizabeth Patel,elizabeth.patel@yahoo.com,+1-379-725-7643,55,Non-Binary,AB-,2022-06-27,Radiology,Diabetes Type 2,9646.67,Aetna,Under Observation
+PAT-00165,Jennifer Ali,jennifer.ali@yahoo.com,+1-206-367-7284,31,Female,AB+,2023-11-07,Pediatrics,Pneumonia,TBD,BlueCross,Deceased
+PAT-00166,Aisha Garcia,aisha.garcia@yahoo.com,+1-263-783-2936,60,Female,B+,2024-04-10,Pediatrics,Diabetes Type 2,32116.21,Cigna,Deceased
+PAT-00167,Elizabeth Brown,,+1-336-589-3509,59,Non-Binary,AB-,2024-05-01,Emergency,Flu,40198.75,None,Transferred
+PAT-00168,Yuki Brown,yuki.brown@health.net,+1-283-638-8319,68,Non-Binary,AB-,2022-06-09,Neurology,Hypertension,41524.32,Medicare,Transferred
+PAT-00169,Elizabeth Rodriguez,elizabeth.rodriguez@yahoo.com,+1-368-435-9525,57,Male,B-,2025-04-09,Emergency,TBD,44995.02,UnitedHealth,Discharged
+PAT-00170,Linda Williams,linda.williams@health.net,+1-625-567-1945,72,Female,AB+,2022-02-14,Radiology,Asthma,40914.43,Medicaid,Transferred
+PAT-00171,Elizabeth Johnson,spaces in@email.com,+1-633-452-2044,70,Male,A-,2024-08-24,Cardiology,Asthma,20738.91,None,Transferred
+PAT-00499,Yuki Patel,yuki.patel@hospital.org,+1-583-491-8348,49,Female,A-,2025-10-30,Orthopedics,Bronchitis,6372.34,Medicare,Under Observation
+PAT-00173,David Williams,david.williams@yahoo.com,+1-203-874-1372,39,Female,O+,2024-12-25,Radiology,Migraine,12751.85,Cigna,Transferred
+PAT-00174,John Brown,john.brown@gmail.com,+1-232-928-7868,79,Male,B-,2023-02-27,Neurology,Diabetes Type 2,29900.24,UnitedHealth,Discharged
+PAT-00175,Patricia Kim,patricia.kim@gmail.com,+1-611-549-4839,70,Male,A+,2022-10-14,Unknown,Migraine,40881.42,,Deceased
+PAT-00176,Elizabeth Martinez,elizabeth.martinez@outlook.com,+1-442-409-3347,,Non-Binary,B-,2024-04-26,Pediatrics,Asthma,3517.4,Medicare,Transferred
+PAT-00177,Aisha Patel,aisha.patel@hospital.org,+1-769-607-1768,45,Non-Binary,O+,2024-12-10,Dermatology,Anemia,20708.83,Cigna,Under Observation
+PAT-00178,Robert Tanaka,robert.tanaka@health.net,+1-684-346-4692,39,Non-Binary,B+,PENDING,Cardiology,Flu,20927.54,UnitedHealth,Transferred
+PAT-00179,Michael Brown,michael.brown@outlook.com,+1-408-438-2295,58,Female,A-,2025-01-01,Oncology,Hypertension,13788.85,Medicaid,Discharged
+PAT-00180,Carlos Johnson,carlos.johnson@yahoo.com,+1-979-701-4555,62,Male,AB-,2023-09-13,Cardiology,Migraine,46889.41,Medicaid,Discharged
+PAT-00181,Raj Tanaka,user@,+1-448-812-4350,51,Male,AB-,2023-08-03,Radiology,COVID-19,26915.68,Cigna,Deceased
+PAT-00182,John Garcia,,+1-709-577-2615,93,Female,AB-,2023-02-21,Dermatology,Bronchitis,20989.54,Medicare,Transferred
+PAT-00183,Raj Williams,raj.williams@gmail.com,+1-467-666-7841,38,Male,B-,2023-11-07,Oncology,Anemia,UNKNOWN,Aetna,Under Observation
+PAT-00184,David Patel,david.patel@outlook.com,+1-463-881-9005,93,Non-Binary,O-,2024-08-01,Orthopedics,Bronchitis,8878.65,Medicaid,Under Observation
+PAT-00185,Robert Ali,robert.ali@health.net,+1-857-160-9584,5,Male,A+,2022-01-14,Radiology,Fracture,-466.64,Aetna,Discharged
+PAT-00186,Raj Williams,raj.williams@gmail.com,+1-423-617-8471,48,Male,O-,2025-09-12,Emergency,Hypertension,827.31,Medicare,Under Observation
+PAT-00187,James Smith,james.smith@health.net,+1-939-381-9777,37,Male,O+,2023-01-03,Neurology,Diabetes Type 2,26457.08,Aetna,Transferred
+PAT-00188,Elizabeth Rodriguez,elizabeth.rodriguez@outlook.com,+1-562-373-7502,11,Female,O+,2024-07-29,Oncology,Migraine,15348.74,None,Discharged
+PAT-00189,Aisha Chen,aisha.chen@gmail.com,+1-295-515-7213,49,Non-Binary,O-,2022-04-25,Cardiology,Fracture,4592.96,None,Under Observation
+PAT-00190,Aisha Tanaka,aisha.tanaka@outlook.com,+1-779-978-2562,,Male,B-,2023-03-09,Emergency,Asthma,2804.82,BlueCross,Deceased
+PAT-00191,Fatima Rodriguez,fatima.rodriguez@health.net,+1-873-133-3938,41,Male,B-,2025-04-17,Orthopedics,Anemia,-3805.39,Cigna,Transferred
+PAT-00192,Elizabeth Brown,elizabeth.brown@health.net,+1-598-793-9856,43,Female,B+,2025-11-12,Neurology,Hypertnsion,37400.1,Cigna,Discharged
+PAT-00193,Mary Miller,spaces in@email.com,+1-277-448-7499,42,Male,AB+,2024-07-11,Emergency,diabtes,18112.65,UnitedHealth,Under Observation
+PAT-00194,Robert Patel,robert.patel@health.net,+1-876-489-2404,80,Female,B-,2025-12-31,Neurology,Diabetes Type 2,13764.62,UnitedHealth,Transferred
+PAT-00195,Raj Miller,raj.miller@outlook.com,+1-569-209-2499,1,Female,O-,2024-01-08,Pediatrics,Diabetes Type 2,7059.1,Aetna,Under Observation
+PAT-00196,Linda Rodriguez,,12345,4,Male,AB-,2025-02-09,ORTHO,Pneumonia,30103.17,Cigna,Under Observation
+PAT-00197,James Jones,james.jones@hospital.org,+1-597-897-2387,93,Non-Binary,B-,2025-03-17,Orthopedics,Anemia,8890.34,Cigna,Deceased
+PAT-00198,John Davis,john.davis@yahoo.com,+1-264-271-8121,36,Female,AB+,2024-09-18,Neurology,Bronchitis,TBD,Aetna,Under Observation
+PAT-00199,Elizabeth Martinez,elizabeth.martinez@yahoo.com,+1-668-209-3219,39,Male,O+,2023-11-12,Radiology,Bronchitis,22291.03,UnitedHealth,Transferred
+PAT-00200,John Garcia,john.garcia@health.net,+1-911-305-8848,41,Male,O+,2023-10-16,Pediatrics,COVID-19,48404.27,None,Transferred
+PAT-00201,Jennifer Miller,jennifer.miller@outlook.com,+1-602-473-2865,73,Male,B+,2025-10-28,Cardiology,COVID-19,47177.26,Aetna,Under Observation
+PAT-00202,Yuki Jones,yuki.jones@gmail.com,+1-618-789-9180,18,Non-Binary,AB+,2023-05-11,Pediatrics,Fracture,35904.2,None,Under Observation
+PAT-00203,Mary Davis,mary.davis@health.net,+1-690-696-7566,69,Non-Binary,O+,2025-01-18,Cardiology,Bronchitis,35230.9,None,Discharged
+PAT-00204,Mary Tanaka,mary.tanaka@yahoo.com,+1-873-780-6816,22,Non-Binary,A+,2025-02-27,Radiology,Bronchitis,48302.98,UnitedHealth,Discharged
+PAT-00205,James Johnson,james.johnson@outlook.com,+1-427-622-9499,72,Non-Binary,B-,2024-07-01,Dermatology,Anemia,23421.63,Medicaid,Transferred
+PAT-00206,Jennifer Smith,jennifer.smith@hospital.org,+1-307-402-7815,11,Male,B+,2023-12-15,Pediatrics,Bronchitis,23038.97,Aetna,Under Observation
+PAT-00207,Jennifer Davis,jennifer.davis@gmail.com,+1-648-839-8412,41,Male,AB+,2022-04-02,Neurology,Hypertension,42534.41,Medicaid,Discharged
+PAT-00208,Aisha Tanaka,aisha.tanaka@yahoo.com,+1-958-349-9454,23,Non-Binary,B+,2023-11-09,Radiology,,11976.85,UnitedHealth,Transferred
+PAT-00209,Robert Patel,robert.patel@hospital.org,+1-605-129-4232,58,Non-Binary,O+,,Cardiology,Migraine,10686.33,None,Discharged
+PAT-00210,Elizabeth Johnson,elizabeth.johnson@health.net,+1-391-474-6340,26,Female,A-,2023-06-22,Emergency,Flu,48312.86,Cigna,Under Observation
+PAT-00211,Elizabeth Miller,elizabeth.miller@health.net,+1-316-456-6766,,Non-Binary,B+,2025-10-11,Pediatrics,Pneumonia,29713.33,Medicaid,Transferred
+PAT-00212,Jennifer Johnson,jennifer.johnson@yahoo.com,+1-512-219-3999,48,Non-Binary,B+,2024-11-12,Radiology,Anemia,30023.08,Medicare,Under Observation
+PAT-00213,Michael Williams,michael.williams@hospital.org,+1-850-650-3838,72,Male,O-,2023-08-15,Orthopedics,Fracture,16071.71,UnitedHealth,Discharged
+PAT-00214,Carlos Garcia,carlos.garcia@gmail.com,+1-696-239-4196,50,Non-Binary,O-,2024-04-17,Emergency,Anemia,35652.05,UnitedHealth,Under Observation
+PAT-00215,Robert Johnson,,+1-231-914-4613,38,Male,AB+,2023-04-06,Pediatrics,Fracture,39146.64,Medicare,Under Observation
+PAT-00216,David Rodriguez,david.rodriguez@gmail.com,+1-786-216-5389,70,Female,A+,2024-06-22,Oncology,Anemia,TBD,None,Transferred
+PAT-00217,John Chen,john.chen@gmail.com,+1-660-369-6711,12,Female,A-,2023-05-01,Oncology,Pneumonia,34612.11,None,Under Observation
+PAT-00218,Robert Martinez,robert.martinez@yahoo.com,+1-411-933-4390,8,Non-Binary,AB-,2024-12-26,Pediatrics,N/A,27169.04,Cigna,Deceased
+PAT-00219,John Martinez,john.martinez@outlook.com,+1-726-795-2560,18,Female,A+,2023-07-22,Orthopedics,Fracture,12859.02,Medicaid,Deceased
+PAT-00220,Carlos Brown,carlos.brown@hospital.org,+1-701-245-5402,81,Female,O+,2024-07-14,Neurology,Diabetes Type 2,20441.11,Medicaid,Deceased
+PAT-00221,Raj Ali,raj.ali@outlook.com,+1-665-599-6362,75,Male,A-,2024-07-27,Dermatology,Diabetes Type 2,-4033.35,UnitedHealth,Transferred
+PAT-00222,Michael Chen,user@,+1-706-374-6289,37,Female,B+,2025-03-05,Emergency,Bronchitis,n/a,None,Discharged
+PAT-00223,James Johnson,james.johnson@hospital.org,+1-216-227-3588,57,Female,A+,2024-05-26,Oncology,Fracture,free,Cigna,Transferred
+PAT-00224,Carlos Ali,,+1-295-770-6905,33,Male,AB-,2025-09-22,Orthopedics,Hypertension,20118.91,Cigna,Transferred
+PAT-00225,Michael Patel,michael.patel@gmail.com,+1-920-197-1017,28,Female,A-,2022-09-29,Oncology,Flu,34159.14,BlueCross,Discharged
+PAT-00226,Raj Garcia,raj.garcia@gmail.com,+1-632-810-3165,N/A,Male,B-,2024-02-24,Neurology,Diabetes Type 2,5608.48,Cigna,Deceased
+PAT-00227,Robert Miller,robert.miller@yahoo.com,+1-856-793-3340,9,Non-Binary,A+,2025-06-03,Orthopedics,COVID-19,17883.79,Aetna,Transferred
+PAT-00228,Fatima Miller,fatima.miller@health.net,+1-903-553-4559,12,Male,B+,2022-09-10,Radiology,Bronchitis,48180.81,Cigna,Transferred
+PAT-00229,Patricia Jones,patricia.jones@gmail.com,+1-454-666-5668,89,Male,AB+,2023-02-25,Oncology,Anemia,15129.33,BlueCross,Transferred
+PAT-00230,Linda Miller,linda.miller@gmail.com,+1-446-611-2163,68,Male,AB-,2023-10-11,oncollogy,Anemia,43110.29,Medicare,Under Observation
+PAT-00231,Jennifer Rodriguez,jennifer.rodriguez@yahoo.com,+1-981-582-2195,3,Non-Binary,A-,2022-01-29,Pediatrics,Migraine,2471.43,BlueCross,Under Observation
+PAT-00232,David Jones,david.jones@health.net,+1-985-525-7939,90,Female,A-,2025-08-04,XYZ,Asthma,4638.06,BlueCross,Transferred
+PAT-00233,Yuki Williams,yuki.williams@health.net,+1-534-500-2083,40,Non-Binary,O+,2023-05-04,Cardiology,Migraine,4767.53,UnitedHealth,Discharged
+PAT-00559,Linda Martinez,linda.martinez@health.net,+1-256-416-3877,16,Male,B+,2025-12-07,Cardiology,Fracture,25072.44,Cigna,Deceased
+PAT-00235,Robert Garcia,robert.garcia@yahoo.com,+1-967-899-5403,94,Male,A+,2023-11-18,Radiology,Asthma,26430.78,Cigna,Discharged
+PAT-00236,Linda Davis,linda.davis@health.net,+1-568-156-9185,73,Male,AB-,2022-11-19,Pediatrics,Diabetes Type 2,44766.29,Medicaid,Discharged
+PAT-00237,Patricia Kim,patricia.kim@health.net,+1-202-145-1201,32,Male,O-,,Radiology,Fracture,9358.57,None,Discharged
+PAT-00238,David Tanaka,david.tanaka@hospital.org,+1-429-429-5067,54,Non-Binary,AB-,2023-07-10,Neurology,Pneumonia,18954.0,Medicare,Discharged
+PAT-00239,Robert Brown,robert.brown@health.net,+1-247-510-2129,60,Female,AB+,2023-11-02,Neurology,Flu,23108.94,Cigna,Transferred
+PAT-00240,John Martinez,john.martinez@outlook.com,+1-957-737-4974,60,Female,O-,2023-02-05,Oncology,Fracture,815.71,UnitedHealth,Discharged
+PAT-00241,Patricia Rodriguez,patricia.rodriguez@outlook.com,+1-851-959-1157,43,Male,O+,2023-09-22,Neurology,Migraine,26725.82,Aetna,Under Observation
+PAT-00242,Linda Smith,linda.smith@yahoo.com,+1-928-386-2524,6,Male,O+,2025-12-06,Dermatology,COVID-19,48740.46,BlueCross,Discharged
+PAT-00243,David Williams,david.williams@hospital.org,+1-276-706-2020,56,Non-Binary,B+,2023-04-30,Pediatrics,Asthma,42620.23,None,Under Observation
+PAT-00244,Raj Chen,raj.chen@outlook.com,+1-525-563-5455,30,Male,B-,2022-10-06,Neurology,Fracture,5730.06,UnitedHealth,Under Observation
+PAT-00245,Jennifer Miller,jennifer.miller@gmail.com,+1-748-466-4401,58,Female,O-,2023-06-27,Neurology,,8301.96,Medicaid,Deceased
+PAT-00246,Carlos Kim,carlos.kim@health.net,+1-241-320-6370,19,Male,B-,2023-12-30,Radiology,Flu,2923.06,Cigna,Deceased
+PAT-00247,Carlos Williams,carlos.williams@gmail.com,+1-614-975-8408,72,Non-Binary,B-,2022-07-13,Emergency,diabtes,40292.89,Aetna,Discharged
+PAT-00248,James Smith,james.smith@yahoo.com,+1-333-302-7563,48,Non-Binary,A-,2025-04-07,Pediatrics,Diabetes Type 2,1579.11,BlueCross,Transferred
+PAT-00249,Fatima Patel,fatima.patel@hospital.org,+1-331-194-6432,16,Male,O-,2022-04-14,Orthopedics,Pneumonia,21941.24,Medicaid,Under Observation
+PAT-00250,Linda Smith,linda.smith@hospital.org,+1-899-536-3831,46,Male,B+,2023-07-18,Pediatrics,COVID-19,44229.48,BlueCross,Transferred
+PAT-00251,Aisha Jones,aisha.jones@hospital.org,+1-621-663-8848,350,Male,AB+,2024-02-24,Orthopedics,Anemia,10373.16,None,Transferred
+PAT-00252,Aisha Tanaka,aisha.tanaka@health.net,+1-219-491-6883,62,Non-Binary,O-,2023-12-06,Dermatology,Anemia,-1668.59,BlueCross,Deceased
+PAT-00253,Elizabeth Brown,elizabeth.brown@gmail.com,+1-997-387-1959,61,Non-Binary,AB-,2025-04-11,Oncology,Fracture,5456.65,Medicaid,Transferred
+PAT-00254,John Rodriguez,john.rodriguez@gmail.com,+1-982-324-7363,46,Male,B+,2023-04-30,Dermatology,Bronchitis,45742.01,BlueCross,Deceased
+PAT-00255,Elizabeth Martinez,elizabeth.martinez@yahoo.com,+1-776-292-9064,70,Female,B+,2024-10-01,Cardiology,Diabetes Type 2,3280.31,Medicare,Transferred
+PAT-00256,James Rodriguez,james.rodriguez@hospital.org,+1-200-439-4300,17,Female,B+,2023-10-25,Cardiology,Hypertension,7811.74,Medicaid,Transferred
+PAT-00257,Yuki Johnson,yuki.johnson@health.net,+1-573-174-7120,91,Non-Binary,O+,2025-04-15,Neurology,Bronchitis,15437.38,Aetna,Transferred
+PAT-00258,Raj Miller,raj.miller@hospital.org,+1-864-424-3854,91,Non-Binary,AB-,2023-04-03,Orthopedics,Anemia,15687.75,Medicaid,Deceased
+PAT-00259,Robert Williams,robert.williams@gmail.com,+1-918-686-7415,73,Male,B+,2025-05-18,Dermatology,Pneumonia,11434.31,Medicare,Discharged
+PAT-00260,Fatima Davis,fatima.davis@yahoo.com,+1-539-863-2274,31,Female,AB-,2022-12-10,Neurology,Bronchitis,-3996.67,Cigna,Transferred
+PAT-00261,Patricia Kim,patricia.kim@gmail.com,+1-558-362-2770,93,Male,A+,2024-03-01,Emergency,Anemia,none,UnitedHealth,Under Observation
+PAT-00262,Fatima Miller,fatima.miller@outlook.com,+1-759-484-2661,62,Non-Binary,B-,2022-11-30,Emergency,Diabetes Type 2,40060.13,BlueCross,Deceased
+PAT-00263,James Garcia,james.garcia@outlook.com,+1-307-175-6600,22,Female,B+,2022-06-03,Neurology,Bronchitis,29904.51,Medicare,Under Observation
+PAT-00264,Raj Smith,raj.smith@hospital.org,+1-869-268-8113,21,Male,A-,2023-11-10,Oncology,Migraine,20759.35,Medicare,Deceased
+PAT-00265,Aisha Jones,aisha.jones@outlook.com,+1-443-198-1813,51,Non-Binary,O-,2022-11-11,Cardiology,Bronchitis,688.87,BlueCross,Deceased
+PAT-00266,Carlos Patel,carlos.patel@health.net,+1-691-304-2589,4,Male,B+,2025-07-31,Pediatrics,Diabetes Type 2,23941.75,BlueCross,Deceased
+PAT-00267,Yuki Miller,yuki.miller@hospital.org,+1-700-776-5341,12,Non-Binary,O+,TBD,Dermatology,Anemia,18785.38,UnitedHealth,Discharged
+PAT-00268,John Davis,john.davis@hospital.org,+1-469-331-5400,73,Male,B+,2025-11-27,Neurology,Diabetes Type 2,33572.99,None,Under Observation
+PAT-00269,Yuki Martinez,yuki.martinez@yahoo.com,+1-766-162-7342,67,Female,O-,2025-03-18,Oncology,COVID-19,15293.18,UnitedHealth,Discharged
+PAT-00270,David Martinez,a@b,+1-785-793-3415,16,Female,B+,2022-12-09,Oncology,Migraine,6746.21,UnitedHealth,Discharged
+PAT-00271,Aisha Miller,aisha.miller@yahoo.com,+1-842-251-5225,41,Non-Binary,A-,2022-06-28,Radiology,Flu,20169.07,Cigna,Deceased
+PAT-00272,David Davis,david.davis@gmail.com,+1-917-738-9561,54,Male,O+,2022-11-03,Orthopedics,TBD,29602.74,None,Discharged
+PAT-00273,Fatima Johnson,fatima.johnson@health.net,+1-998-203-5687,69,Female,O+,2023-06-25,Radiology,COVID-19,28815.15,UnitedHealth,Discharged
+PAT-00274,Robert Jones,robert.jones@hospital.org,+1-347-733-7581,5,Female,AB-,2025-11-15,Oncology,Hypertnsion,37414.62,Cigna,Deceased
+PAT-00275,James Garcia,james.garcia@outlook.com,+1-518-387-9054,90,Non-Binary,A-,2023-04-12,Orthopedics,Asthma,48723.86,UnitedHealth,Deceased
+PAT-00276,John Kim,john.kim@hospital.org,+1-819-761-2462,25,Female,B-,2024-04-13,Emergency,Flu,43425.85,None,Discharged
+PAT-00277,David Tanaka,david.tanaka@yahoo.com,+1-267-418-9303,350,Male,A+,2022-12-22,Oncology,Migraine,41930.35,Aetna,Discharged
+PAT-00278,Linda Smith,linda.smith@outlook.com,+1-921-303-5488,48,Female,O+,2025-07-25,Neurology,Hypertension,12475.94,UnitedHealth,Under Observation
+PAT-00279,Robert Chen,robert.chen@hospital.org,+1-800-664-6730,45,Male,AB+,2025-11-11,Neurology,Asthma,1858.8,BlueCross,Transferred
+PAT-00280,Carlos Martinez,carlos.martinez@yahoo.com,+1-426-762-4688,87,Male,AB+,2025-08-27,Radiology,Flu,1492.59,None,Discharged
+PAT-00281,Linda Ali,linda.ali@yahoo.com,+1-862-277-1138,29,Female,AB+,2025-12-30,Pediatrics,Anemia,44826.41,None,Deceased
+PAT-00282,Linda Jones,linda.jones@yahoo.com,+1-677-409-9530,80,Female,A-,2022-01-16,,Flu,32543.43,Medicare,Deceased
+PAT-00283,John Patel,john.patel@gmail.com,not-a-phone,36,Non-Binary,AB-,2023-07-22,Pediatrics,Asthma,9823.82,Medicare,Transferred
+PAT-00284,Fatima Smith,fatima.smith@health.net,+1-613-776-6236,88,Male,A+,2025-09-04,Emergency,Asthma,13341.6,UnitedHealth,Under Observation
+PAT-00285,Michael Kim,michael.kim@gmail.com,+1-797-825-4111,44,Non-Binary,B-,2025-11-06,Emergency,something_wrong,25612.09,None,Transferred
+PAT-00286,Carlos Patel,carlos.patel@health.net,+1-385-400-2599,61,Male,AB+,2025-02-18,Orthopedics,Bronchitis,32894.51,Aetna,Deceased
+PAT-00287,Patricia Kim,patricia.kim@outlook.com,+1-630-907-6428,48,Female,AB+,2024-08-07,Neurology,COVID-19,3157.01,Medicaid,Discharged
+PAT-00288,Linda Ali,linda.ali@yahoo.com,+1-712-222-7253,68,Female,O+,2022-04-21,Orthopedics,Fracture,49621.22,Cigna,Under Observation
+PAT-00289,Elizabeth Ali,elizabeth.ali@hospital.org,+1-346-423-3954,11,Female,AB-,2025-07-16,Orthopedics,Bronchitis,31907.7,BlueCross,Under Observation
+PAT-00290,John Brown,john.brown@yahoo.com,+1-790-882-3595,63,Male,B+,2025-06-12,Radiology,Anemia,20467.98,UnitedHealth,Under Observation
+PAT-00291,James Smith,james.smith@health.net,+1-404-848-7112,2,Female,B-,2022-02-06,Cardiology,Migraine,11700.15,Cigna,Deceased
+PAT-00292,Robert Johnson,robert.johnson@hospital.org,+1-715-702-6015,22,Male,A+,2023-09-03,neuro,COVID-19,36527.68,Medicare,Deceased
+PAT-00293,Michael Ali,michael.ali@yahoo.com,+1-550-601-6885,25,Male,O+,2022-02-09,Oncology,Migraine,36494.86,Aetna,Transferred
+PAT-00294,Raj Smith,raj.smith@health.net,+1-716-273-3017,47,Non-Binary,A+,2024-02-08,Pediatrics,Flu,31345.17,Medicare,Discharged
+PAT-00295,Aisha Johnson,,+1-249-806-2897,54,Female,O+,2022-09-11,Pediatrics,COVID-19,35242.48,Aetna,Discharged
+PAT-00296,John Miller,john.miller@gmail.com,+1-878-632-5423,80,Non-Binary,B+,2024-05-07,Neurology,Flu,36078.93,BlueCross,Deceased
+PAT-00297,Mary Tanaka,mary.tanaka@gmail.com,+1-709-303-4272,34,Non-Binary,B-,2024-01-04,Radiology,Asthma,8438.49,Medicare,Under Observation
+PAT-00360,Fatima Brown,fatima.brown@hospital.org,+1-538-340-1044,2,Non-Binary,A-,2022-08-15,Emergency,Fracture,47497.58,None,Discharged
+PAT-00299,Raj Kim,raj.kim@gmail.com,+1-462-759-4787,59,Female,AB+,2024-08-08,Cardiology,Diabetes Type 2,40752.33,None,Discharged
+PAT-00300,Carlos Jones,carlos.jones@outlook.com,+1-893-420-7979,95,Male,A-,2022-04-04,Cardiology,Fracture,33336.07,Aetna,Deceased
+PAT-00301,Jennifer Ali,jennifer.ali@hospital.org,+1-836-374-2522,48,Female,B+,2022-08-22,Radiology,Anemia,-1989.4,Cigna,Under Observation
+PAT-00302,Raj Chen,raj.chen@hospital.org,+1-631-764-3732,15,Male,A+,2022-11-23,Neurology,Anemia,45605.72,UnitedHealth,Under Observation
+PAT-00303,Robert Martinez,robert.martinez@hospital.org,+1-997-467-1472,88,Non-Binary,B+,2024-09-16,Emergency,Diabetes Type 2,44435.9,UnitedHealth,Discharged
+PAT-00304,Mary Jones,mary.jones@outlook.com,+1-212-821-9598,74,Non-Binary,B-,2025-10-03,Dermatology,Flu,26393.61,Medicaid,Discharged
+PAT-00305,Michael Patel,michael.patel@yahoo.com,+1-693-454-7305,20,Non-Binary,A+,2022-01-24,Orthopedics,Flu,42517.86,None,Under Observation
+PAT-00306,Carlos Williams,carlos.williams@gmail.com,+1-969-603-6253,31,Female,AB+,2022-04-14,XYZ,Flu,free,UnitedHealth,Transferred
+PAT-00307,Mary Davis,mary.davis@hospital.org,+1-786-558-2442,64,Female,AB-,2022-09-01,Emergency,Hypertension,5580.84,UnitedHealth,Discharged
+PAT-00308,David Rodriguez,david.rodriguez@gmail.com,+1-293-910-5990,66,Non-Binary,B-,2025-09-02,Emergency,Bronchitis,18485.45,BlueCross,Transferred
+PAT-00309,Carlos Davis,carlos.davis@outlook.com,+1-773-885-8751,N/A,Non-Binary,AB-,2024-07-15,N/A,Diabetes Type 2,38086.34,Aetna,Discharged
+PAT-00310,Jennifer Garcia,@nodomain,+1-760-634-7125,90,Male,A+,2022-12-03,Emergency,Fracture,41181.01,Medicaid,Under Observation
+PAT-00311,Mary Jones,mary.jones@health.net,+1-400-292-2978,51,Male,O-,2023-01-26,Dermatology,Diabetes Type 2,37978.89,BlueCross,Discharged
+PAT-00312,Yuki Ali,yuki.ali@hospital.org,+1-668-774-9260,18,Female,A+,2024-12-22,Cardiology,Flu,46797.76,None,Under Observation
+PAT-00313,Fatima Rodriguez,fatima.rodriguez@yahoo.com,+1-908-692-3845,94,Male,A-,2024-03-04,Dermatology,Flu,44128.83,,Transferred
+PAT-00314,John Miller,john.miller@outlook.com,+1-501-563-3185,18,Female,AB+,2025-12-07,Dermatology,Flu,31812.87,Aetna,Transferred
+PAT-00315,Elizabeth Kim,@nodomain,+1-903-453-3173,91,Non-Binary,B+,2024-10-28,Dermatology,TBD,38158.36,Medicare,Under Observation
+PAT-00316,Elizabeth Martinez,elizabeth.martinez@hospital.org,+1-890-865-9747,37,Female,A+,2024-12-06,Neurology,Hypertension,19353.08,BlueCross,Discharged
+PAT-00317,Patricia Jones,patricia.jones@yahoo.com,,19,Male,AB+,2023-02-22,Cardiology,Bronchitis,40794.3,BlueCross,Transferred
+PAT-00318,Raj Patel,raj.patel@health.net,+1-598-343-9370,90,Female,A+,2024-02-21,Radiology,Anemia,47856.75,Medicaid,Deceased
+PAT-00319,David Smith,david.smith@gmail.com,+1-961-357-4327,80,Female,B-,2025-07-21,Dermatology,Pneumonia,27557.45,Medicare,Transferred
+PAT-00320,Yuki Kim,yuki.kim@yahoo.com,+1-501-559-3906,88,Male,B+,2022-12-22,Neurology,Anemia,2511.39,Cigna,Deceased
+PAT-00321,Robert Williams,robert.williams@health.net,+1-461-105-6415,60,Non-Binary,B+,2022-03-23,oncollogy,Bronchitis,30045.58,None,Deceased
+PAT-00322,Linda Tanaka,linda.tanaka@health.net,+1-763-466-2194,91,Female,B-,2023-01-12,Neurology,Flu,-938.58,Medicare,Under Observation
+PAT-00323,Mary Garcia,,+1-418-779-6437,43,Female,AB+,2023-03-24,Emergency,Flu,41272.58,Medicaid,Discharged
+PAT-00324,Mary Patel,mary.patel@outlook.com,+1-656-346-4994,6,Non-Binary,AB-,2024-02-21,Neurology,Anemia,13201.23,Medicaid,Deceased
+PAT-00325,James Ali,user@@double.com,+1-988-483-9426,66,Female,O-,2022-03-31,neuro,Migraine,16355.48,BlueCross,Discharged
+PAT-00326,Robert Tanaka,robert.tanaka@health.net,+1-746-107-2072,27,Non-Binary,B-,PENDING,Radiology,Diabetes Type 2,10676.19,None,Under Observation
+PAT-00327,Aisha Chen,aisha.chen@gmail.com,+1-964-802-3519,4,Female,AB-,2022-03-19,Neurology,Diabetes Type 2,-2924.43,None,Deceased
+PAT-00328,David Johnson,david.johnson@health.net,+1-433-364-7678,50,Female,O+,2024-06-05,Dermatology,Hypertension,19780.34,BlueCross,Discharged
+PAT-00329,Aisha Kim,aisha.kim@health.net,+1-264-874-1745,90,Male,AB-,2024-10-26,Neurology,Asthma,39451.15,Cigna,Discharged
+PAT-00330,John Tanaka,john.tanaka@hospital.org,+1-590-504-1504,61,Male,B-,2022-10-07,Radiology,Flu,15101.43,Medicaid,Transferred
+PAT-00331,John Patel,john.patel@outlook.com,+1-211-666-3316,16,Male,A+,,,Flu,-4474.05,BlueCross,Deceased
+PAT-00332,Patricia Kim,patricia.kim@outlook.com,+1-416-522-9397,19,Male,B+,2023-03-29,Pediatrics,Migraine,6173.82,Medicaid,Discharged
+PAT-00333,Carlos Tanaka,carlos.tanaka@health.net,+1-672-760-2198,38,Non-Binary,A-,2023-05-29,Neurology,Migraine,36416.67,UnitedHealth,Deceased
+PAT-00334,Jennifer Williams,jennifer.williams@yahoo.com,+1-302-391-2143,25,Female,O-,2024-07-11,Dermatology,Pneumonia,33141.4,Medicaid,Transferred
+PAT-00335,Elizabeth Martinez,elizabeth.martinez@outlook.com,+1-523-538-3762,1,Female,B-,2023-03-30,Radiology,Asthma,42085.45,Aetna,Deceased
+PAT-00336,Fatima Davis,fatima.davis@hospital.org,+1-656-467-6004,63,Non-Binary,A-,2022-12-26,Neurology,Asthma,MISSING,Aetna,Transferred
+PAT-00337,John Kim,john.kim@gmail.com,+1-944-177-1305,65,Non-Binary,A+,2025-04-06,Radiology,Pneumonia,11031.65,BlueCross,Deceased
+PAT-00338,David Ali,david.ali@health.net,+1-683-769-3435,47,Female,B-,2025-04-22,Pediatrics,Fracture,23502.71,Medicare,Discharged
+PAT-00339,Michael Garcia,michael.garcia@health.net,+1-210-778-4913,79,Non-Binary,B+,2024-11-18,Orthopedics,COVID-19,8381.51,Medicare,Transferred
+PAT-00340,Raj Kim,raj.kim@hospital.org,+1-567-141-4585,63,Male,A-,2023-06-26,Dermatology,Migraine,2619.02,Aetna,Deceased
+PAT-00341,Michael Davis,michael.davis@hospital.org,+1-247-140-6309,14,Non-Binary,AB+,2023-06-24,Orthopedics,Anemia,32856.93,Cigna,Discharged
+PAT-00342,David Jones,david.jones@hospital.org,+1-428-628-7649,unknown,Female,O-,2024-09-14,Cardiology,Flu,44160.7,UnitedHealth,Transferred
+PAT-00343,Patricia Johnson,patricia.johnson@health.net,+1-858-387-4465,20,Male,B+,2024-01-12,Neurology,Migraine,21023.38,Cigna,Discharged
+PAT-00344,Linda Patel,user@,+1-690-315-3641,83,Female,A+,2023-05-15,Cardiology,Fracture,28887.58,Aetna,Transferred
+PAT-00345,Aisha Rodriguez,aisha.rodriguez@gmail.com,+1-786-250-1916,22,Female,B+,2024-11-24,Radiology,Pneumonia,48477.56,Medicaid,Discharged
+PAT-00346,Fatima Kim,fatima.kim@outlook.com,+1-287-321-8359,78,Female,O-,2022-12-16,Unknown,Anemia,30241.52,None,Transferred
+PAT-00347,Elizabeth Patel,elizabeth.patel@health.net,+1-470-271-6614,59,Non-Binary,A-,2023-04-16,Radiology,Anemia,7044.55,BlueCross,Transferred
+PAT-00348,David Chen,david.chen@health.net,+1-900-529-3450,78,Male,B+,2024-09-01,Cardiology,Flu,25414.8,BlueCross,Discharged
+PAT-00349,Linda Patel,linda.patel@yahoo.com,+1-817-652-1019,87,Non-Binary,O+,2024-12-05,Radiology,Bronchitis,43803.8,Medicaid,Under Observation
+PAT-00350,Patricia Tanaka,patricia.tanaka@hospital.org,+1-987-490-6742,76,Non-Binary,A-,2024-05-21,Orthopedics,Asthma,24118.49,Aetna,Discharged
+PAT-00351,John Martinez,john.martinez@health.net,+1-618-363-4096,1,Non-Binary,A+,2025-03-29,Neurology,Flu,856.11,Medicaid,Transferred
+PAT-00352,Raj Tanaka,raj.tanaka@outlook.com,???,20,Female,AB+,2023-06-20,Radiology,Pneumonia,none,Cigna,Under Observation
+PAT-00353,Yuki Brown,yuki.brown@hospital.org,+1-765-902-8904,23,Female,O-,2023-06-04,Pediatrics,Pneumonia,17545.64,Medicaid,Under Observation
+PAT-00354,Raj Williams,raj.williams@gmail.com,+1-965-335-8317,90,Male,A-,2023-03-16,Radiology,Bronchitis,40142.26,Medicare,Discharged
+PAT-00355,Robert Miller,robert.miller@gmail.com,+1-293-943-3381,61,Non-Binary,O+,2022-06-30,,Asthma,11477.63,BlueCross,Discharged
+PAT-00356,Raj Miller,raj.miller@hospital.org,not-a-phone,37,Non-Binary,A+,2022-12-25,Emergency,,--,None,Deceased
+PAT-00357,Patricia Smith,N/A,+1-722-628-4795,79,Male,A+,2024-01-07,Oncology,Hypertension,48794.47,BlueCross,Deceased
+PAT-00358,Yuki Miller,yuki.miller@outlook.com,+1-885-504-7642,76,Male,A+,2025-12-12,Neurology,Diabetes Type 2,27704.84,Medicaid,Deceased
+PAT-00359,Jennifer Chen,jennifer.chen@outlook.com,+1-431-720-4187,59,Female,A+,2023-06-19,Orthopedics,Anemia,25558.79,Medicare,Discharged
+PAT-00360,David Jones,david.jones@outlook.com,+1-319-922-9409,33,Non-Binary,AB+,2025-11-22,Emergency,Anemia,28376.85,None,Transferred
+PAT-00361,Yuki Garcia,notanemail,+1-897-571-1448,62,Male,AB+,2022-05-19,Radiology,N/A,-1462.44,Aetna,Deceased
+PAT-00362,Michael Garcia,michael.garcia@health.net,+1-748-109-5314,32,Female,A-,2024-03-28,Dermatology,Diabetes Type 2,27950.3,Aetna,Under Observation
+PAT-00363,Jennifer Garcia,jennifer.garcia@yahoo.com,+1-787-375-3994,88,Male,O-,2023-02-13,Oncology,diabtes,43700.75,Aetna,Transferred
+PAT-00364,Patricia Chen,patricia.chen@yahoo.com,+1-833-464-3555,14,Male,A-,2025-10-16,Emergency,Pneumonia,827.87,None,Discharged
+PAT-00365,Carlos Davis,carlos.davis@outlook.com,+1-835-422-9066,74,Female,O-,2023-01-10,Pediatrics,Anemia,11493.59,Medicare,Transferred
+PAT-00366,James Rodriguez,james.rodriguez@hospital.org,+1-689-653-1533,unknown,Female,O+,2025-11-06,Orthopedics,COVID-19,48837.11,Medicaid,Under Observation
+PAT-00367,Jennifer Kim,jennifer.kim@gmail.com,+1-212-790-4452,49,Non-Binary,A-,2023-10-29,Dermatology,Pneumonia,-1657.14,Aetna,Deceased
+PAT-00368,Patricia Jones,patricia.jones@hospital.org,+1-827-451-6995,24,Female,O+,2023-03-08,Radiology,Bronchitis,18571.36,UnitedHealth,Deceased
+PAT-00369,Linda Williams,linda.williams@health.net,+1-334-689-4744,13,Non-Binary,AB+,2023-04-28,Radiology,Anemia,10205.13,None,Transferred
+PAT-00370,Linda Tanaka,linda.tanaka@gmail.com,+1-380-531-9185,18,Non-Binary,AB-,2024-09-23,Pediatrics,Asthma,28325.85,Medicare,Discharged
+PAT-00371,Michael Johnson,michael.johnson@yahoo.com,+1-261-320-5166,61,Non-Binary,A-,2024-07-10,Dermatology,Asthma,18367.62,Medicare,Deceased
+PAT-00372,Jennifer Smith,jennifer.smith@hospital.org,+1-324-459-4259,74,Non-Binary,B+,2023-08-06,Dermatology,Bronchitis,33823.05,UnitedHealth,Under Observation
+PAT-00373,Fatima Johnson,test@.com,+1-828-393-8598,81,Male,B+,2025-08-04,Dermatology,Anemia,31748.03,Medicare,Under Observation
+PAT-00374,Carlos Ali,carlos.ali@gmail.com,+1-281-265-6629,30,Female,AB-,2025-08-30,Pediatrics,Asthma,n/a,UnitedHealth,Deceased
+PAT-00375,Fatima Davis,fatima.davis@outlook.com,+1-965-701-9535,58,Female,B+,2023-01-12,Cardiology,Fracture,36524.73,Medicaid,Deceased
+PAT-00376,Raj Kim,raj.kim@gmail.com,+1-415-270-7505,14,Male,A-,2024-08-27,Cardiology,Hypertension,38661.22,Medicare,Discharged
+PAT-00377,Mary Jones,mary.jones@health.net,+1-359-186-7387,40,Male,B-,2023-08-05,Emergency,Fracture,6998.22,None,Transferred
+PAT-00378,James Smith,james.smith@outlook.com,+1-533-984-8801,60,Non-Binary,AB+,2025-01-28,neuro,Fracture,48492.34,Medicaid,Transferred
+PAT-00379,Elizabeth Martinez,elizabeth.martinez@hospital.org,+1-846-866-8126,68,Non-Binary,AB+,2023-12-13,Emergency,Flu,11742.86,BlueCross,Under Observation
+PAT-00380,John Garcia,spaces in@email.com,+1-466-259-5973,2,Male,B+,2023-12-06,Pediatrics,COVID-19,26987.39,Medicaid,Under Observation
+PAT-00381,Yuki Davis,yuki.davis@outlook.com,+1-209-884-8052,38,Non-Binary,B-,2022-01-15,Dermatology,Migraine,-4952.27,Medicare,Under Observation
+PAT-00382,Michael Brown,michael.brown@yahoo.com,+1-932-854-7385,49,Male,AB+,2022-06-12,Radiology,Migraine,26072.2,None,Deceased
+PAT-00383,John Patel,a@b,+1-475-522-4080,9,Male,B+,2023-08-17,,COVID-19,31077.61,Cigna,Under Observation
+PAT-00384,Patricia Garcia,patricia.garcia@gmail.com,+1-355-150-9764,3,Male,A-,2023-08-01,Pediatrics,Fracture,35902.2,Medicaid,Discharged
+PAT-00385,Patricia Johnson,patricia.johnson@yahoo.com,+1-215-605-4558,44,Female,AB+,2024-10-17,Dermatology,COVID-19,null,BlueCross,Deceased
+PAT-00386,Mary Chen,mary.chen@yahoo.com,+1-257-372-7429,10,Non-Binary,O-,2023-01-07,Oncology,Asthma,40953.91,None,Discharged
+PAT-00387,Mary Tanaka,user@@double.com,+1-594-889-8257,32,Non-Binary,A+,2023-02-12,Emergency,Diabetes Type 2,26296.39,Aetna,Under Observation
+PAT-00388,Michael Patel,michael.patel@outlook.com,+1-530-262-1691,71,Non-Binary,A-,2023-06-03,Emergency,Asthma,10336.82,BlueCross,Transferred
+PAT-00389,Mary Brown,mary.brown@hospital.org,+1-532-115-3742,36,Non-Binary,A-,2024-03-21,Oncology,Hypertension,48457.33,Medicare,Under Observation
+PAT-00390,Raj Martinez,raj.martinez@yahoo.com,+1-580-889-2466,32,Male,O-,2022-07-07,Dermatology,Hypertension,3458.87,Medicaid,Transferred
+PAT-00391,Raj Rodriguez,a@b,+1-328-599-4812,41,Non-Binary,AB-,2024-06-17,Oncology,Hypertension,34617.87,Cigna,Transferred
+PAT-00392,John Ali,john.ali@gmail.com,+1-696-823-8168,72,Female,O-,2023-01-24,Orthopedics,Flu,17709.4,Medicaid,Under Observation
+PAT-00393,John Chen,john.chen@health.net,+1-767-264-2128,68,Male,O-,2023-08-29,Pediatrics,Flu,18672.08,BlueCross,Under Observation
+PAT-00394,Raj Williams,raj.williams@gmail.com,+1-834-977-6965,80,Male,AB-,2022-05-10,Radiology,Migraine,26441.45,UnitedHealth,Transferred
+PAT-00395,Elizabeth Jones,elizabeth.jones@outlook.com,+1-619-756-6276,15,Male,A-,2022-03-31,Orthopedics,something_wrong,43737.89,Aetna,Discharged
+PAT-00396,Linda Brown,linda.brown@gmail.com,+1-232-684-7366,85,Female,AB+,2022-04-11,Dermatology,Migraine,30494.7,BlueCross,Discharged
+PAT-00397,Fatima Ali,fatima.ali@yahoo.com,+1-871-603-2310,60,Non-Binary,A+,2024-01-10,Radiology,Bronchitis,39815.35,BlueCross,Deceased
+PAT-00398,David Smith,david.smith@gmail.com,+1-511-179-4537,67,Male,A-,2023-04-19,Radiology,Migraine,10059.41,Medicaid,Transferred
+PAT-00399,Elizabeth Patel,elizabeth.patel@yahoo.com,+1-771-867-7802,14,Non-Binary,AB-,2025-10-13,Emergency,Anemia,44199.79,Aetna,Transferred
+PAT-00400,David Miller,david.miller@health.net,+1-545-773-3591,69,Non-Binary,O-,TBD,Dermatology,Flu,49577.42,Cigna,Deceased
+PAT-00401,Michael Tanaka,michael.tanaka@hospital.org,+1-943-431-4943,73,Non-Binary,B-,2024-02-08,Pediatrics,Bronchitis,48101.76,UnitedHealth,Under Observation
+PAT-00402,James Kim,james.kim@gmail.com,+1-491-710-1267,67,Male,AB+,2030-12-25,Pediatrics,Migraine,11133.73,Cigna,Discharged
+PAT-00403,Yuki Chen,yuki.chen@outlook.com,+1-766-623-3534,13,Male,O-,31/13/2024,neuro,Fracture,13616.91,Medicare,Transferred
+PAT-00404,Patricia Jones,patricia.jones@outlook.com,+1-294-684-7550,73,Male,A-,2023-10-27,Emergency,Fracture,24669.68,Medicaid,Discharged
+PAT-00405,Elizabeth Patel,elizabeth.patel@outlook.com,+1-238-848-7251,11,Male,AB-,2023-12-14,Radiology,Anemia,46547.18,BlueCross,Transferred
+PAT-00406,Raj Patel,raj.patel@health.net,+1-211-749-7266,7,Female,A+,2023-10-16,Orthopedics,Bronchitis,25368.88,Aetna,Transferred
+PAT-00407,James Patel,james.patel@hospital.org,+1-656-870-9269,12,Male,O+,2023-08-17,Radiology,Fracture,7043.36,BlueCross,Under Observation
+PAT-00408,Elizabeth Kim,elizabeth.kim@gmail.com,+1-761-508-5301,11,Female,O+,2025-11-30,Orthopedics,Fracture,-3078.73,Aetna,Under Observation
+PAT-00409,Michael Patel,michael.patel@health.net,+1-400-674-9589,32,Male,A-,2023-06-30,Radiology,Bronchitis,34394.53,Medicare,Discharged
+PAT-00410,Mary Patel,mary.patel@hospital.org,+1-633-474-6706,25,Female,AB-,2025-05-01,,???,8878.14,Cigna,Under Observation
+PAT-00411,Elizabeth Williams,elizabeth.williams@hospital.org,+1-245-937-4825,26,Non-Binary,AB-,2022-11-16,Neurology,Diabetes Type 2,37109.29,Aetna,Transferred
+PAT-00412,Carlos Chen,carlos.chen@outlook.com,+1-214-451-2823,40,Female,O-,2022-02-16,Dermatology,Migraine,37130.64,Aetna,Transferred
+PAT-00413,David Rodriguez,david.rodriguez@outlook.com,+1-761-594-3315,89,Non-Binary,A+,,Unknown,Asthma,8930.82,Cigna,Transferred
+PAT-00414,Yuki Kim,yuki.kim@health.net,+1-477-154-8617,84,Male,A-,2024-03-06,Pediatrics,Bronchitis,43281.97,BlueCross,Deceased
+PAT-00415,Carlos Ali,carlos.ali@hospital.org,+1-436-489-9331,91,Male,AB-,2024-09-19,Neurology,Fracture,10344.32,UnitedHealth,Discharged
+PAT-00416,James Brown,james.brown@health.net,+1-512-441-9027,51,Non-Binary,B+,2022-02-07,Dermatology,Bronchitis,18091.22,Cigna,Transferred
+PAT-00417,David Jones,notanemail,+1-840-363-7343,4,Non-Binary,AB+,2023-04-07,Orthopedics,Bronchitis,44910.18,Medicaid,Transferred
+PAT-00418,Mary Kim,mary.kim@hospital.org,+1-733-794-4726,54,Male,B+,2024-05-23,Pediatrics,Pneumonia,16799.59,Medicare,Transferred
+PAT-00419,Patricia Patel,patricia.patel@yahoo.com,+1-794-654-4314,18,Female,B+,2024-05-30,Orthopedics,Pneumonia,45897.05,Cigna,Discharged
+PAT-00420,David Rodriguez,david.rodriguez@gmail.com,+1-388-425-3384,94,Male,AB-,2024-04-27,Radiology,Asthma,-2852.04,None,Deceased
+PAT-00421,Robert Tanaka,notanemail,+1-309-234-4026,350,Non-Binary,AB+,2025-05-25,Oncology,Pneumonia,11993.04,Medicaid,Discharged
+PAT-00422,Jennifer Johnson,jennifer.johnson@hospital.org,+1-337-614-8680,92,Non-Binary,AB-,2023-01-12,Radiology,COVID-19,23955.42,Aetna,Transferred
+PAT-00423,Patricia Smith,patricia.smith@hospital.org,+1-982-115-5421,53,Male,B-,2023-02-23,Neurology,Fracture,46391.61,UnitedHealth,Under Observation
+PAT-00424,Raj Garcia,notanemail,+1-452-537-7633,6,Non-Binary,O+,2023-10-03,Radiology,Pneumonia,46987.39,Medicare,Discharged
+PAT-00425,David Johnson,david.johnson@hospital.org,+1-667-946-1694,32,Non-Binary,O+,2022-03-22,Radiology,Flu,38375.41,BlueCross,Transferred
+PAT-00426,John Davis,john.davis@hospital.org,+1-511-892-5684,60,Male,O+,2023-08-26,XYZ,Flu,45231.94,UnitedHealth,Under Observation
+PAT-00427,Mary Kim,mary.kim@health.net,+1-315-284-9952,18,Female,O+,2023-10-25,Emergency,Hypertension,9354.49,Medicare,Transferred
+PAT-00428,Fatima Davis,fatima.davis@gmail.com,not-a-phone,92,Non-Binary,A-,2022-07-06,Neurology,COVID-19,31886.58,BlueCross,Under Observation
+PAT-00429,Raj Tanaka,raj.tanaka@health.net,+1-826-263-7204,71,Female,A+,2022-12-16,Dermatology,Pneumonia,43629.62,None,Transferred
+PAT-00430,Robert Chen,robert.chen@yahoo.com,+1-383-887-1840,54,Female,AB+,2024-07-02,Pediatrics,Fracture,free,Aetna,Transferred
+PAT-00431,James Martinez,N/A,+1-212-569-9153,64,Non-Binary,A+,2025-05-30,Emergency,Migraine,11235.26,Medicaid,Under Observation
+PAT-00432,Linda Miller,linda.miller@hospital.org,+1-281-715-1107,32,Non-Binary,AB+,2025-06-23,Oncology,Hypertension,9649.58,BlueCross,Deceased
+PAT-00433,James Williams,james.williams@gmail.com,+1-883-691-5889,43,Male,A+,2022-08-12,Radiology,Fracture,8486.09,Cigna,Transferred
+PAT-00434,Linda Kim,linda.kim@health.net,+1-568-136-2525,39,Female,AB-,2024-02-16,Neurology,something_wrong,42243.83,BlueCross,Deceased
+PAT-00435,Linda Williams,linda.williams@gmail.com,+1-911-980-5496,43,Non-Binary,O+,2024-12-10,Oncology,Migraine,30796.66,BlueCross,Discharged
+PAT-00436,Linda Kim,linda.kim@health.net,+1-923-394-7996,78,Female,AB+,2024-12-12,Dermatology,Fracture,30907.35,UnitedHealth,Under Observation
+PAT-00437,Linda Tanaka,user@,+1-824-338-5759,25,Male,A-,2022-02-19,Emergency,Diabetes Type 2,37004.68,Aetna,Under Observation
+PAT-00438,Michael Smith,michael.smith@outlook.com,+1-558-673-4478,2,Non-Binary,B-,2025-11-14,Pediatrics,Asthma,39614.68,Cigna,Deceased
+PAT-00439,David Rodriguez,missing-at-sign.com,+1-985-106-2865,88,Female,AB-,2024-03-22,Cardiology,Fracture,10103.77,None,Deceased
+PAT-00440,Fatima Patel,fatima.patel@hospital.org,+1-685-916-1582,83,Male,O-,TBD,Emergency,Flu,-2166.58,UnitedHealth,Under Observation
+PAT-00441,Fatima Kim,fatima.kim@gmail.com,+1-733-406-6169,72,Non-Binary,A+,2023-03-03,Dermatology,Bronchitis,3777.55,Aetna,Deceased
+PAT-00442,Carlos Smith,carlos.smith@outlook.com,+1-584-741-9753,22,Non-Binary,O+,2023-01-19,Neurology,TBD,35410.68,Cigna,Discharged
+PAT-00443,John Miller,john.miller@gmail.com,+1-708-998-4893,48,Female,AB+,2023-03-19,Pediatrics,Fracture,6055.45,None,Discharged
+PAT-00444,Yuki Brown,yuki.brown@gmail.com,N/A,62,Non-Binary,B+,2023-01-25,Dermatology,COVID-19,36755.83,Medicare,Deceased
+PAT-00445,Yuki Garcia,yuki.garcia@yahoo.com,+1-987-992-2609,67,Non-Binary,B+,2023-02-25,Cardiology,COVID-19,19685.62,None,Discharged
+PAT-00446,James Jones,james.jones@gmail.com,+1-903-968-2426,43,Female,A+,2022-07-31,Pediatrics,Hypertension,29089.21,Cigna,Transferred
+PAT-00447,Jennifer Brown,spaces in@email.com,+1-493-383-9720,41,Female,A-,2023-07-13,oncollogy,Fracture,14045.03,BlueCross,Discharged
+PAT-00448,Patricia Rodriguez,patricia.rodriguez@outlook.com,+1-762-426-5440,19,Non-Binary,AB+,2099-01-01,Oncology,Fracture,4026.52,Medicare,Deceased
+PAT-00449,David Davis,david.davis@gmail.com,+1-333-129-8712,87,Male,A-,2024-02-25,Cardiology,Diabetes Type 2,21610.05,Aetna,Under Observation
+PAT-00450,Elizabeth Garcia,elizabeth.garcia@outlook.com,+1-540-937-4246,92,Non-Binary,A-,2024-08-11,Orthopedics,Diabetes Type 2,40736.13,Medicaid,Under Observation
+PAT-00451,Mary Davis,mary.davis@outlook.com,+1-900-759-8625,61,Male,B-,2022-10-22,Pediatrics,Bronchitis,19907.81,Medicaid,Deceased
+PAT-00452,Yuki Chen,yuki.chen@outlook.com,+1-664-599-1495,9,Female,A-,2023-12-21,Emergency,COVID-19,42365.43,Cigna,Deceased
+PAT-00453,Elizabeth Martinez,elizabeth.martinez@yahoo.com,+1-720-205-7646,92,Male,AB-,2025-02-12,Neurology,Asthma,26870.91,UnitedHealth,Under Observation
+PAT-00454,Patricia Martinez,patricia.martinez@yahoo.com,+1-761-262-8903,50,Male,AB-,2023-03-03,Radiology,Anemia,28576.95,Cigna,Transferred
+PAT-00455,Robert Patel,robert.patel@gmail.com,+1-957-828-8972,15,Non-Binary,O-,2023-10-29,Neurology,COVID-19,9220.61,UnitedHealth,Discharged
+PAT-00456,Elizabeth Johnson,elizabeth.johnson@health.net,+1-989-939-7208,42,Female,A+,2022-07-05,Oncology,Fracture,44419.45,None,Discharged
+PAT-00457,Yuki Williams,yuki.williams@yahoo.com,+1-663-644-5775,50,Non-Binary,O-,2023-02-05,Oncology,Bronchitis,15336.9,None,Deceased
+PAT-00458,Fatima Ali,fatima.ali@hospital.org,+1-935-452-2462,75,Male,O+,2022-09-19,Pediatrics,Hypertension,18776.53,Medicare,Discharged
+PAT-00459,James Kim,james.kim@health.net,+1-567-212-5623,4,Male,O+,2025-12-09,Radiology,Bronchitis,35732.8,UnitedHealth,Under Observation
+PAT-00460,Michael Rodriguez,michael.rodriguez@yahoo.com,+1-878-277-8780,18,Male,O+,2024-01-08,Radiology,Fracture,14779.31,None,Transferred
+PAT-00461,Robert Smith,N/A,+1-863-116-3359,93,Female,O+,2022-10-06,Neurology,Fracture,32291.02,UnitedHealth,Under Observation
+PAT-00462,Fatima Tanaka,a@b,+1-635-738-3945,59,Non-Binary,O+,2025-02-04,Emergency,Anemia,UNKNOWN,Aetna,Under Observation
+PAT-00463,Elizabeth Smith,elizabeth.smith@health.net,+1-710-967-4878,92,Non-Binary,AB+,2024-04-21,Dermatology,Hypertension,48922.56,Medicare,Under Observation
+PAT-00464,Raj Garcia,raj.garcia@gmail.com,+1-794-593-2311,19,Non-Binary,AB+,2024-08-10,Neurology,something_wrong,44550.82,BlueCross,Transferred
+PAT-00465,Linda Patel,linda.patel@gmail.com,+1-900-748-9834,75,Female,A+,2023-12-05,Cardiology,COVID-19,22974.72,UnitedHealth,Deceased
+PAT-00466,Michael Garcia,michael.garcia@outlook.com,,89,Non-Binary,AB+,2025-02-28,oncollogy,Hypertension,31650.35,Medicare,Transferred
+PAT-00467,Elizabeth Smith,,+1-955-739-1447,37,Female,A-,2022-09-17,Neurology,Asthma,12976.52,Medicare,Deceased
+PAT-00468,John Chen,john.chen@outlook.com,+1-214-859-2827,78,Male,B+,2025-09-11,Emergency,Bronchitis,40488.11,Cigna,Transferred
+PAT-00469,Linda Williams,linda.williams@health.net,+1-233-451-2382,19,Non-Binary,B+,2024-10-12,Radiology,Anemia,12278.4,UnitedHealth,Transferred
+PAT-00470,Patricia Martinez,@nodomain,+1-255-757-5331,15,Male,B+,2024-08-08,Radiology,COVID-19,15417.67,Medicaid,Transferred
+PAT-00471,Michael Patel,michael.patel@hospital.org,+1-685-368-3378,68,Female,A+,2023-08-15,Emergency,Anemia,34085.42,Medicare,Discharged
+PAT-00472,Mary Ali,mary.ali@health.net,+1-852-462-8074,79,Non-Binary,AB+,2023-11-18,Pediatrics,diabtes,40214.66,Cigna,Under Observation
+PAT-00473,Linda Tanaka,linda.tanaka@yahoo.com,+1-951-788-4193,67,Female,B+,2023-10-04,Cardiolgy,something_wrong,41668.63,BlueCross,Under Observation
+PAT-00474,Mary Rodriguez,mary.rodriguez@gmail.com,+1-901-556-6759,29,Non-Binary,AB+,2023-05-31,Oncology,Hypertension,1673.17,BlueCross,Discharged
+PAT-00475,Elizabeth Patel,elizabeth.patel@yahoo.com,+1-813-753-2995,91,Male,A-,2025-05-23,Orthopedics,Anemia,32991.53,Medicaid,Transferred
+PAT-00476,Fatima Johnson,fatima.johnson@yahoo.com,+1-459-401-8650,85,Male,O-,2023-07-21,Radiology,Bronchitis,13238.16,None,Discharged
+PAT-00477,John Tanaka,john.tanaka@gmail.com,+1-591-497-6450,8,Female,AB+,2022-12-31,Emergency,Diabetes Type 2,24840.23,Aetna,Under Observation
+PAT-00478,Robert Patel,robert.patel@hospital.org,+1-311-247-9857,56,Male,A-,2024-06-23,Pediatrics,Diabetes Type 2,2225.61,BlueCross,Deceased
+PAT-00479,Yuki Davis,yuki.davis@gmail.com,+1-709-252-1014,5,Non-Binary,O+,2023-06-30,Orthopedics,Bronchitis,45278.57,Medicare,Discharged
+PAT-00480,David Kim,david.kim@hospital.org,+1-689-546-7617,94,Male,B-,2022-01-07,Radiology,COVID-19,6499.58,Medicare,Deceased
+PAT-00481,Jennifer Patel,jennifer.patel@outlook.com,+1-610-156-2485,47,Non-Binary,AB-,2022-06-14,Emergency,Asthma,32565.73,Aetna,Discharged
+PAT-00482,Michael Patel,michael.patel@yahoo.com,+1-506-812-7391,14,Non-Binary,AB-,2024-09-23,neuro,COVID-19,36898.55,Aetna,Discharged
+PAT-00483,Patricia Smith,patricia.smith@health.net,+1-444-600-7369,9,Non-Binary,AB+,2024-10-20,Emergency,Hypertension,2333.61,BlueCross,Deceased
+PAT-00312,Yuki Kim,yuki.kim@gmail.com,+1-615-221-4468,84,Non-Binary,O-,2025-10-20,Orthopedics,Pneumonia,12032.79,BlueCross,Discharged
+PAT-00485,Raj Williams,raj.williams@hospital.org,+1-869-119-8720,80,Male,B-,2025-12-07,Orthopedics,Hypertension,9026.33,BlueCross,Deceased
+PAT-00486,Carlos Tanaka,carlos.tanaka@gmail.com,+1-667-725-3796,76,Male,A-,2022-08-22,Emergency,Pneumonia,40059.17,Aetna,Discharged
+PAT-00487,Yuki Brown,yuki.brown@hospital.org,+1-545-930-7586,42,Male,B+,2023-10-21,Oncology,Hypertension,29857.72,Cigna,Discharged
+PAT-00488,Mary Jones,mary.jones@yahoo.com,+1-975-525-3753,90,Female,B+,2024-06-17,Oncology,TBD,2514.6,BlueCross,Under Observation
+PAT-00489,Yuki Williams,yuki.williams@gmail.com,+1-698-182-1104,1,Male,A-,2025-12-18,Pediatrics,Anemia,34828.42,None,
+PAT-00490,Raj Williams,raj.williams@yahoo.com,+1-346-755-5439,67,Female,O+,2023-05-05,Orthopedics,Pneumonia,34737.84,Medicare,Transferred
+PAT-00491,Raj Davis,raj.davis@health.net,+1-290-742-5934,45,Female,A+,2025-02-16,Oncology,Migraine,6316.64,Medicare,Discharged
+PAT-00492,Elizabeth Garcia,elizabeth.garcia@health.net,+1-719-324-8605,81,Non-Binary,B-,2023-07-21,Cardiology,Migraine,6077.62,Aetna,Under Observation
+PAT-00493,Linda Williams,linda.williams@yahoo.com,+1-886-144-1885,83,Female,AB+,2023-03-06,Radiology,Asthma,17047.58,None,Under Observation
+PAT-00494,James Johnson,james.johnson@gmail.com,+1-750-280-3589,4,Female,A-,2022-05-26,Oncology,COVID-19,29838.98,Cigna,Under Observation
+PAT-00495,Patricia Kim,patricia.kim@outlook.com,+1-435-897-2804,42,Male,A-,2023-05-01,Radiology,Migraine,19088.85,Aetna,Discharged
+PAT-00496,Linda Martinez,linda.martinez@hospital.org,+1-255-546-3374,-5,Non-Binary,O-,2022-12-31,Radiology,Bronchitis,???,Medicaid,Transferred
+PAT-00497,Aisha Garcia,aisha.garcia@outlook.com,+1-407-443-3084,5,Non-Binary,A+,2023-07-29,Orthopedics,Diabetes Type 2,42656.74,UnitedHealth,Under Observation
+PAT-00498,Robert Tanaka,robert.tanaka@outlook.com,+1-425-402-3568,82,Non-Binary,B+,2025-03-29,Oncology,Diabetes Type 2,20878.96,Medicare,Under Observation
+PAT-00499,Carlos Brown,carlos.brown@health.net,+1-684-957-8581,36,Male,O+,2023-05-21,Oncology,Bronchitis,null,Aetna,Transferred
+PAT-00500,Fatima Martinez,fatima.martinez@gmail.com,+1-627-145-1656,61,Non-Binary,A+,2024-05-21,Radiology,COVID-19,40580.97,Medicaid,Discharged
+PAT-00501,Linda Davis,linda.davis@yahoo.com,+1-285-671-1203,89,Non-Binary,O+,2023-03-23,Orthopedics,Bronchitis,15141.63,Medicaid,Discharged
+PAT-00502,James Davis,james.davis@outlook.com,+1-365-820-8524,74,Non-Binary,A+,2024-07-20,Emergency,Fracture,43772.85,UnitedHealth,Transferred
+PAT-00503,Yuki Chen,yuki.chen@outlook.com,+1-841-575-1022,81,Male,O+,2025-11-15,Dermatology,Flu,2119.35,UnitedHealth,Deceased
+PAT-00504,Raj Martinez,raj.martinez@health.net,+1-789-913-4393,88,Male,AB-,2022-04-23,Dermatology,Hypertension,5992.84,Cigna,Under Observation
+PAT-00505,Elizabeth Smith,elizabeth.smith@outlook.com,+1-575-279-2097,72,Non-Binary,B-,2022-10-11,Dermatology,Migraine,27211.87,Medicaid,Under Observation
+PAT-00506,Raj Tanaka,raj.tanaka@health.net,+1-919-314-4693,42,Female,AB+,2024-10-28,neuro,Asthma,3195.77,Cigna,Deceased
+PAT-00507,Linda Davis,linda.davis@health.net,+1-739-949-3010,61,Non-Binary,AB+,2024-07-14,Dermatology,Diabetes Type 2,9823.5,UnitedHealth,Discharged
+PAT-00508,Mary Miller,mary.miller@yahoo.com,+1-495-178-2791,22,Female,A-,2025-11-28,Orthopedics,COVID-19,7949.65,Aetna,Discharged
+PAT-00509,John Miller,john.miller@health.net,+1-335-585-6680,54,Female,A+,2023-08-21,Oncology,Diabetes Type 2,1590.81,None,Transferred
+PAT-00510,Carlos Rodriguez,carlos.rodriguez@outlook.com,+1-621-692-6616,200,Non-Binary,AB-,2024-09-22,Emergency,COVID-19,15552.08,Aetna,Deceased
+PAT-00511,Robert Tanaka,robert.tanaka@outlook.com,+1-432-595-7093,37,Male,B+,2023-12-25,Pediatrics,COVID-19,47832.59,Medicare,Transferred
+PAT-00512,Raj Rodriguez,user@@double.com,+1-386-279-3514,21,Male,A-,2022-03-26,Dermatology,Pneumonia,6760.44,Cigna,Deceased
+PAT-00513,Robert Brown,robert.brown@health.net,+1-924-135-6192,45,Male,AB-,2024-07-07,Orthopedics,Flu,15427.21,BlueCross,Under Observation
+PAT-00514,Fatima Davis,fatima.davis@yahoo.com,+1-669-427-3556,1,Non-Binary,AB-,2025-08-18,Pediatrics,COVID-19,44850.88,None,Transferred
+PAT-00515,Yuki Martinez,@nodomain,+1-546-805-2840,94,Female,A+,2022-10-13,Neurology,Asthma,1727.38,Medicare,Transferred
+PAT-00680,Linda Garcia,linda.garcia@gmail.com,+1-534-156-4197,75,Non-Binary,,2023-07-24,Oncology,Hypertension,4637.68,None,Under Observation
+PAT-00517,Aisha Patel,aisha.patel@gmail.com,+1-724-503-4185,63,Female,A+,TBD,Dermatology,Anemia,7823.32,None,Under Observation
+PAT-00518,Jennifer Miller,jennifer.miller@outlook.com,+1-212-391-6651,45,Female,O-,2025-02-22,Neurology,Migraine,36528.74,UnitedHealth,Under Observation
+PAT-00519,Yuki Davis,yuki.davis@outlook.com,+1-367-925-7944,94,Female,B+,2025-04-17,Neurology,Fracture,10785.3,UnitedHealth,Deceased
+PAT-00520,Mary Ali,mary.ali@health.net,+1-974-484-2449,1,Female,AB+,2024-04-28,Orthopedics,Flu,23374.94,Medicare,Transferred
+PAT-00521,Patricia Williams,patricia.williams@hospital.org,+1-496-667-9037,6,Female,AB+,2024-10-08,Emergency,Migraine,1828.58,BlueCross,Transferred
+PAT-00522,John Jones,john.jones@hospital.org,+1-327-769-5713,54,Male,O-,2025-11-09,Oncology,Hypertension,6408.06,Cigna,Under Observation
+PAT-00523,Mary Martinez,mary.martinez@outlook.com,+1-795-592-8144,34,Non-Binary,O-,2025-11-22,Neurology,Bronchitis,25870.03,Medicare,Discharged
+PAT-00524,Carlos Jones,carlos.jones@yahoo.com,+1-795-159-3394,41,Female,B+,2024-01-02,Orthopedics,Hypertension,-2380.35,UnitedHealth,Deceased
+PAT-00525,James Jones,james.jones@outlook.com,+1-742-754-2258,66,Male,B+,2022-07-13,Orthopedics,Flu,none,Cigna,Deceased
+PAT-00526,John Patel,john.patel@outlook.com,+1-298-647-6761,19,Male,B+,2024-11-27,Pediatrics,Hypertnsion,39050.99,UnitedHealth,Deceased
+PAT-00527,Fatima Ali,fatima.ali@yahoo.com,+1-304-323-3532,65,Male,B-,2025-02-18,Neurology,Anemia,23294.32,BlueCross,Discharged
+PAT-00528,Carlos Williams,carlos.williams@gmail.com,+1-691-456-6104,89,Female,B+,2024-06-24,Dermatology,Fracture,35639.8,BlueCross,Discharged
+PAT-00529,Patricia Williams,patricia.williams@yahoo.com,+1-904-332-6036,17,Male,B+,2022-06-10,Radiology,Diabetes Type 2,4347.9,None,Under Observation
+PAT-00530,Yuki Miller,yuki.miller@gmail.com,+1-401-210-1537,85,Non-Binary,A+,00/00/0000,Neurology,Asthma,2642.43,Cigna,Discharged
+PAT-00531,Yuki Johnson,yuki.johnson@gmail.com,+1-816-310-4277,350,Non-Binary,AB-,2022-03-01,Neurology,Fracture,none,Cigna,Deceased
+PAT-00532,Jennifer Williams,jennifer.williams@health.net,+1-999-846-4962,-5,Non-Binary,A-,2022-07-22,Cardiology,Flu,11241.4,Aetna,Deceased
+PAT-00533,Robert Ali,robert.ali@health.net,???,28,Non-Binary,O-,2024-01-21,Orthopedics,COVID-19,33839.52,BlueCross,Transferred
+PAT-00534,Carlos Garcia,,+1-634-319-9425,30,Female,A-,2023-10-06,Neurology,COVID-19,5960.65,Aetna,Under Observation
+PAT-00535,Yuki Garcia,yuki.garcia@outlook.com,+1-770-839-1665,11,Female,O-,2022-08-25,Radiology,Asthma,none,Medicaid,Deceased
+PAT-00536,Aisha Chen,test@.com,+1-431-667-7672,38,Female,B-,2022-05-23,Emergency,Bronchitis,9375.22,Medicaid,Under Observation
+PAT-00537,Aisha Johnson,aisha.johnson@hospital.org,+1-648-635-2392,16,Male,O+,2024-03-31,Neurology,Fracture,3703.17,Aetna,Deceased
+PAT-00264,Patricia Martinez,patricia.martinez@hospital.org,+1-325-338-7958,93,Female,AB+,2025-04-06,Pediatrics,Anemia,18126.82,Medicaid,Under Observation
+PAT-00539,Linda Rodriguez,linda.rodriguez@outlook.com,+1-350-886-8448,14,Male,AB+,2024-09-29,Emergency,Migraine,31604.37,Aetna,Discharged
+PAT-00540,Mary Kim,mary.kim@gmail.com,+1-269-610-1438,23,Female,AB-,2022-11-09,Pediatrics,Pneumonia,31350.01,None,Discharged
+PAT-00541,Aisha Tanaka,aisha.tanaka@health.net,+1-985-604-8635,26,Female,O-,2024-10-01,XYZ,Flu,17508.97,None,Discharged
+PAT-00542,Yuki Smith,yuki.smith@hospital.org,+1-321-492-8374,41,Female,O-,2024-07-30,Cardiology,Hypertension,9255.02,Medicaid,Deceased
+PAT-00543,Fatima Kim,fatima.kim@yahoo.com,+1-703-541-3203,40,Non-Binary,O+,2024-09-25,Neurology,Pneumonia,33913.72,Medicaid,Under Observation
+PAT-00544,Linda Rodriguez,linda.rodriguez@yahoo.com,+1-718-157-7412,34,Female,O+,2025-06-17,Dermatology,diabtes,-604.31,BlueCross,Discharged
+PAT-00545,Robert Chen,robert.chen@outlook.com,+1-557-928-1440,81,Female,O+,2022-07-19,Radiology,Bronchitis,49601.3,UnitedHealth,Deceased
+PAT-00546,James Patel,james.patel@yahoo.com,+1-453-340-6113,76,Male,A-,2023-09-17,Neurology,Bronchitis,8904.07,Medicare,Deceased
+PAT-00547,James Davis,james.davis@hospital.org,+1-781-627-7900,35,Male,O-,2025-04-19,Unknown,Bronchitis,19198.01,UnitedHealth,Deceased
+PAT-00548,Elizabeth Johnson,elizabeth.johnson@hospital.org,+1-302-807-4373,44,Female,AB-,2022-12-08,Pediatrics,Bronchitis,48486.67,Aetna,Under Observation
+PAT-00549,Aisha Chen,aisha.chen@gmail.com,+1-748-319-5708,34,Male,AB+,2025-03-20,Radiology,Migraine,--,BlueCross,Discharged
+PAT-00550,Elizabeth Garcia,elizabeth.garcia@outlook.com,+1-268-680-9700,61,Female,B-,2023-12-13,Neurology,Asthma,25479.66,Cigna,Under Observation
+PAT-00551,Aisha Rodriguez,aisha.rodriguez@outlook.com,+1-404-524-7591,33,Non-Binary,O-,2025-10-07,ORTHO,Hypertension,31578.27,Medicare,Transferred
+PAT-00552,Elizabeth Davis,elizabeth.davis@yahoo.com,+1-876-943-8656,35,Non-Binary,O+,2025-03-05,Cardiology,Flu,10432.08,UnitedHealth,Transferred
+PAT-00553,Patricia Williams,patricia.williams@outlook.com,+1-645-520-6220,9,Non-Binary,B-,2024-04-24,Pediatrics,Asthma,32479.11,Cigna,Transferred
+PAT-00554,Michael Brown,michael.brown@gmail.com,+1-353-296-1453,32,Female,O-,2024-09-21,Radiology,Anemia,32522.64,BlueCross,Transferred
+PAT-00555,Robert Jones,robert.jones@yahoo.com,+1-229-364-5551,85,Non-Binary,B+,2025-08-12,Cardiology,COVID-19,39220.57,BlueCross,Discharged
+PAT-00556,Jennifer Martinez,missing-at-sign.com,+1-265-516-6954,86,Non-Binary,A-,2024-03-23,Orthopedics,Migraine,6040.65,Medicaid,Discharged
+PAT-00557,David Patel,david.patel@health.net,+1-993-637-5125,64,Male,B-,2025-05-13,Neurology,Bronchitis,16799.65,Medicare,Under Observation
+PAT-00558,Yuki Kim,yuki.kim@yahoo.com,+1-633-323-3363,14,Male,B-,2023-07-17,Emergency,Anemia,13088.14,Medicare,Discharged
+PAT-00559,Linda Rodriguez,linda.rodriguez@outlook.com,+1-916-215-6185,70,Female,O-,2025-10-30,Oncology,Asthma,44031.96,Aetna,Deceased
+PAT-00560,Linda Kim,,+1-515-121-1570,95,Non-Binary,A+,2025-11-15,Oncology,Asthma,MISSING,Cigna,Deceased
+PAT-00561,Fatima Tanaka,fatima.tanaka@gmail.com,+1-747-987-4872,57,Female,A+,2024-03-15,Pediatrics,Asthma,4967.39,None,Transferred
+PAT-00562,John Brown,john.brown@yahoo.com,+1-649-746-6196,83,Female,A+,2023-07-16,Neurology,COVID-19,23819.02,UnitedHealth,Deceased
+PAT-00563,Raj Miller,raj.miller@gmail.com,+1-364-815-5275,65,Male,AB-,2024-05-11,Dermatology,COVID-19,34912.9,None,Discharged
+PAT-00564,Aisha Patel,aisha.patel@yahoo.com,+1-845-554-3229,1,Female,B-,2025-07-10,Pediatrics,something_wrong,29002.56,BlueCross,Transferred
+PAT-00565,Patricia Rodriguez,patricia.rodriguez@yahoo.com,+1-808-802-7722,41,Female,O-,2022-10-01,Pediatrics,Fracture,34529.61,None,Deceased
+PAT-00566,Yuki Jones,yuki.jones@yahoo.com,+1-286-524-7022,24,Female,O+,2025-03-14,Oncology,Hypertension,47431.41,Medicare,Transferred
+PAT-00567,Fatima Johnson,spaces in@email.com,+1-403-368-3764,7,Female,O+,,Pediatrics,Fracture,4908.53,Cigna,Transferred
+PAT-00568,Elizabeth Johnson,elizabeth.johnson@gmail.com,+1-935-638-8129,59,Non-Binary,O-,2022-08-31,Oncology,Migraine,9931.94,None,Deceased
+PAT-00569,John Kim,john.kim@hospital.org,+1-591-233-8066,27,Non-Binary,B-,2023-08-03,Oncology,Anemia,9428.31,None,Transferred
+PAT-00570,James Jones,james.jones@outlook.com,+1-441-732-8388,32,Female,O-,2022-06-25,XYZ,COVID-19,7093.64,Cigna,Under Observation
+PAT-00571,Aisha Brown,aisha.brown@hospital.org,+1-925-533-5198,10,Male,A+,2022-04-17,Dermatology,Migraine,23811.15,Cigna,Discharged
+PAT-00572,James Jones,james.jones@health.net,+1-834-490-5956,51,Non-Binary,AB-,2022-09-28,Cardiology,Pneumonia,9378.93,Aetna,Under Observation
+PAT-00573,Fatima Garcia,fatima.garcia@hospital.org,+1-335-191-6198,91,Non-Binary,O+,2022-10-18,Pediatrics,Diabetes Type 2,16006.85,Aetna,Under Observation
+PAT-00574,Carlos Chen,carlos.chen@outlook.com,+1-965-469-8046,37,Female,AB+,2024-11-24,Dermatology,Anemia,44687.25,Cigna,Under Observation
+PAT-00575,Yuki Williams,yuki.williams@health.net,+1-873-751-8208,7,Male,B+,2022-04-22,Oncology,Fracture,2275.18,Cigna,Transferred
+PAT-00576,Raj Davis,raj.davis@hospital.org,+1-318-606-1668,57,Female,O-,2024-07-26,Emergency,Diabetes Type 2,42369.0,None,Transferred
+PAT-00577,Mary Garcia,mary.garcia@gmail.com,+1-408-989-5654,24,Male,AB+,2025-02-27,Oncology,Pneumonia,49901.23,BlueCross,Transferred
+PAT-00578,Michael Ali,michael.ali@gmail.com,+1-452-886-9161,87,Male,AB-,2022-02-23,Pediatrics,Diabetes Type 2,20011.41,Medicare,Discharged
+PAT-00579,Carlos Garcia,carlos.garcia@yahoo.com,+1-229-183-8540,91,Non-Binary,O-,2024-07-18,Pediatrics,Pneumonia,33071.31,Cigna,Discharged
+PAT-00580,Aisha Martinez,aisha.martinez@hospital.org,+1-532-849-3118,28,Male,AB+,2023-10-24,Cardiology,Diabetes Type 2,27584.23,Medicare,Under Observation
+PAT-00503,Mary Miller,mary.miller@outlook.com,N/A,12,Male,B-,2022-11-30,Radiology,Anemia,null,None,Transferred
+PAT-00582,Mary Jones,mary.jones@hospital.org,+1-642-853-6080,88,Non-Binary,B+,2024-01-06,Neurology,Bronchitis,25876.33,UnitedHealth,Under Observation
+PAT-00583,Fatima Miller,fatima.miller@hospital.org,+1-474-676-7931,12,Female,AB-,2025-06-11,Orthopedics,Anemia,31718.97,BlueCross,Discharged
+PAT-00584,David Garcia,david.garcia@hospital.org,+1-892-329-3540,64,Non-Binary,A-,2023-08-19,Emergency,Anemia,4419.56,None,Under Observation
+PAT-00585,John Williams,john.williams@yahoo.com,+1-900-407-5073,67,Female,AB+,2025-03-10,Cardiology,Flu,4288.36,BlueCross,Discharged
+PAT-00586,David Miller,david.miller@hospital.org,+1-296-575-5151,46,Female,A-,2024-10-28,Cardiology,Diabetes Type 2,37155.55,UnitedHealth,Transferred
+PAT-00587,Yuki Williams,yuki.williams@hospital.org,+1-246-185-7819,91,Female,AB-,2025-04-17,Emergency,COVID-19,31378.61,Cigna,Deceased
+PAT-00588,Fatima Chen,fatima.chen@yahoo.com,+1-416-289-2281,78,Female,A-,2024-06-07,Cardiology,Hypertension,20049.23,BlueCross,Transferred
+PAT-00589,Aisha Davis,aisha.davis@hospital.org,+1-908-514-8974,39,Non-Binary,AB-,2025-11-15,Radiology,Asthma,4837.94,Aetna,Discharged
+PAT-00590,Patricia Johnson,patricia.johnson@gmail.com,+1-912-292-1439,27,Female,B+,2025-08-23,Oncology,Anemia,42183.44,None,Transferred
+PAT-00591,Mary Jones,user@,+1-351-585-7912,3,Male,B+,31/13/2024,Emergency,COVID-19,23838.72,None,Under Observation
+PAT-00592,Elizabeth Brown,elizabeth.brown@yahoo.com,+1-501-683-7418,7,Female,A+,not-a-date,Radiology,something_wrong,42506.5,Medicaid,Deceased
+PAT-00593,James Davis,a@b,+1-697-625-8993,30,Non-Binary,A+,2024-12-17,Cardiology,Anemia,29031.97,Medicare,Discharged
+PAT-00594,John Ali,john.ali@hospital.org,12345,80,Non-Binary,AB-,2024-07-07,Radiology,Hypertension,8486.01,Medicaid,Transferred
+PAT-00595,Linda Garcia,linda.garcia@hospital.org,+1-437-619-4599,76,Non-Binary,AB-,2025-05-18,Emergency,Fracture,44217.08,Medicaid,Under Observation
+PAT-00596,Michael Chen,michael.chen@outlook.com,+1-683-918-3654,80,Male,AB+,2025-11-15,Neurology,COVID-19,6890.28,Aetna,Transferred
+PAT-00597,Elizabeth Davis,elizabeth.davis@gmail.com,+1-625-605-5975,31,Male,A+,2022-02-07,Dermatology,Asthma,18173.67,Aetna,Transferred
+PAT-00598,Carlos Chen,carlos.chen@health.net,+1-232-926-2043,44,Female,A-,2025-06-18,Oncology,Diabetes Type 2,28318.08,UnitedHealth,Deceased
+PAT-00599,Jennifer Tanaka,jennifer.tanaka@outlook.com,+1-987-147-5382,20,Non-Binary,A-,2025-12-17,Cardiology,COVID-19,40049.85,None,Discharged
+PAT-00600,Mary Tanaka,mary.tanaka@health.net,+1-824-900-2669,72,Male,A-,2022-12-09,Neurology,Migraine,45593.8,Aetna,Deceased
+PAT-00601,Raj Davis,raj.davis@health.net,+1-710-850-2626,20,Non-Binary,AB-,2023-11-17,Orthopedics,Diabetes Type 2,-4503.85,UnitedHealth,Under Observation
+PAT-00602,Yuki Tanaka,yuki.tanaka@gmail.com,+1-451-954-8760,44,Female,B+,2022-06-24,Pediatrics,Bronchitis,35902.39,UnitedHealth,Deceased
+PAT-00603,Aisha Patel,aisha.patel@yahoo.com,+1-355-871-9677,54,Male,B+,2024-05-28,Radiology,Anemia,44954.23,None,Deceased
+PAT-00604,James Davis,james.davis@yahoo.com,N/A,9,Male,AB-,2023-10-07,Radiology,Fracture,21986.58,UnitedHealth,Discharged
+PAT-00605,Aisha Ali,aisha.ali@yahoo.com,+1-788-159-9516,38,Female,O+,2025-10-26,Pediatrics,Bronchitis,45506.93,BlueCross,Deceased
+PAT-00606,Fatima Rodriguez,fatima.rodriguez@health.net,+1-350-817-7618,58,Non-Binary,B-,2025-01-19,Emergency,Bronchitis,44439.91,None,Under Observation
+PAT-00607,Yuki Brown,yuki.brown@outlook.com,+1-286-137-9805,43,Female,B+,2024-12-01,Pediatrics,Migraine,5094.57,Medicare,Deceased
+PAT-00608,David Garcia,david.garcia@yahoo.com,+1-223-128-9846,76,Female,B-,2099-01-01,Radiology,Flu,5966.87,BlueCross,Deceased
+PAT-00609,John Patel,john.patel@health.net,+1-562-226-1782,84,Male,O-,2023-09-03,Cardiology,COVID-19,17279.52,Aetna,Transferred
+PAT-00610,Jennifer Jones,test@.com,+1-882-903-3293,92,Female,B-,2022-08-04,Dermatology,Flu,29327.27,None,Deceased
+PAT-00611,Linda Johnson,linda.johnson@yahoo.com,+1-928-535-7751,unknown,Male,A+,2024-05-20,Orthopedics,,11131.83,BlueCross,Deceased
+PAT-00612,Aisha Rodriguez,aisha.rodriguez@hospital.org,+1-802-672-9502,51,Female,O-,2025-07-27,Radiology,COVID-19,34606.38,UnitedHealth,Under Observation
+PAT-00613,Carlos Williams,carlos.williams@yahoo.com,+1-717-230-8942,92,Female,B+,2025-12-13,Neurology,Migraine,23043.9,BlueCross,Transferred
+PAT-00614,David Garcia,david.garcia@gmail.com,+1-816-972-7694,15,Male,AB-,2025-03-16,Pediatrics,Hypertension,26377.49,BlueCross,Deceased
+PAT-00615,John Garcia,john.garcia@outlook.com,+1-501-597-1458,19,Male,O+,2022-04-10,Pediatrics,Asthma,TBD,None,Under Observation
+PAT-00616,James Johnson,N/A,+1-557-169-1732,54,Female,AB+,2025-03-04,Emergency,Bronchitis,39176.79,UnitedHealth,Transferred
+PAT-00617,Yuki Williams,yuki.williams@health.net,+1-851-571-8371,86,Female,B+,2023-10-29,Neurology,Pneumonia,33392.86,UnitedHealth,Under Observation
+PAT-00618,Patricia Ali,patricia.ali@hospital.org,+1-547-653-1750,86,Female,AB+,2025-08-15,Neurology,Fracture,35506.83,Medicare,Deceased
+PAT-00619,David Patel,david.patel@gmail.com,+1-859-672-2395,25,Non-Binary,A+,2025-03-13,Oncology,COVID-19,-3048.83,BlueCross,Discharged
+PAT-00620,Aisha Ali,aisha.ali@health.net,+1-384-119-5504,27,Male,O-,2022-06-23,Dermatology,Anemia,29650.2,UnitedHealth,Discharged
+PAT-00621,Jennifer Miller,jennifer.miller@yahoo.com,+1-624-124-9649,41,Female,AB+,2022-07-06,Neurology,Diabetes Type 2,n/a,Cigna,Transferred
+PAT-00622,Robert Jones,robert.jones@gmail.com,+1-357-414-7672,87,Male,A+,2025-06-12,Dermatology,Fracture,MISSING,BlueCross,Deceased
+PAT-00623,Michael Johnson,michael.johnson@outlook.com,+1-345-522-6311,34,Female,A-,2022-04-17,Oncology,Migraine,37730.62,Medicare,Transferred
+PAT-00624,Linda Rodriguez,linda.rodriguez@health.net,+1-594-217-5412,8,Female,O-,2025-02-06,Radiology,Diabetes Type 2,24466.49,UnitedHealth,Transferred
+PAT-00625,Fatima Ali,fatima.ali@gmail.com,+1-475-667-2663,32,Non-Binary,B+,2023-09-16,Radiology,COVID-19,4653.46,Medicaid,Transferred
+PAT-00626,Yuki Williams,yuki.williams@outlook.com,+1-753-272-5016,69,Female,O-,2022-03-27,Cardiology,COVID-19,48075.16,Medicare,Deceased
+PAT-00627,Aisha Williams,aisha.williams@gmail.com,+1-261-593-5477,77,Female,O+,2023-12-21,Oncology,Pneumonia,42113.87,Cigna,Discharged
+PAT-00628,Robert Kim,robert.kim@health.net,???,12,Female,A-,2022-10-14,Unknown,Anemia,10937.08,Medicare,Deceased
+PAT-00629,Fatima Patel,fatima.patel@outlook.com,+1-850-367-8417,35,Male,AB-,2023-12-01,Oncology,COVID-19,???,Cigna,Discharged
+PAT-00630,Fatima Kim,fatima.kim@yahoo.com,+1-861-102-8807,1,Male,B+,2024-04-26,Emergency,Anemia,27137.51,None,Discharged
+PAT-00631,David Smith,david.smith@hospital.org,+1-888-226-6783,49,Non-Binary,AB-,2024-03-03,Orthopedics,Hypertension,6675.81,Cigna,Transferred
+PAT-00632,Linda Smith,linda.smith@yahoo.com,+1-960-120-5606,88,Non-Binary,AB-,2023-01-28,Neurology,Pneumonia,31449.21,None,Transferred
+PAT-00633,Patricia Davis,patricia.davis@outlook.com,+1-237-387-9074,91,Non-Binary,B-,not-a-date,Cardiolgy,Anemia,5991.85,Cigna,Under Observation
+PAT-00634,Robert Rodriguez,robert.rodriguez@yahoo.com,+1-875-856-3875,9,Non-Binary,B+,2022-05-14,Orthopedics,Asthma,46711.39,None,Transferred
+PAT-00635,Fatima Rodriguez,fatima.rodriguez@outlook.com,+1-396-968-1378,89,Non-Binary,AB+,2025-10-26,Emergency,Hypertension,46925.57,Medicaid,Discharged
+PAT-00636,Carlos Garcia,carlos.garcia@hospital.org,+1-616-380-2994,88,Non-Binary,O-,2024-10-11,Dermatology,???,38071.57,Medicaid,Transferred
+PAT-00637,James Jones,james.jones@hospital.org,+1-745-559-6181,1,Female,B-,2023-11-17,Neurology,Pneumonia,40479.81,Medicaid,Transferred
+PAT-00638,Raj Miller,raj.miller@gmail.com,+1-455-301-3694,,Female,A-,2025-07-06,Neurology,Hypertension,24258.34,None,Discharged
+PAT-00639,Elizabeth Tanaka,elizabeth.tanaka@outlook.com,+1-456-353-2766,61,Male,AB-,2022-04-22,Dermatology,Flu,39808.5,BlueCross,Under Observation
+PAT-00640,Yuki Johnson,yuki.johnson@hospital.org,+1-792-227-2401,8,Male,O+,2023-10-04,Neurology,Fracture,3569.11,None,Under Observation
+PAT-00641,James Jones,james.jones@health.net,+1-841-542-2077,14,Non-Binary,A+,2025-02-19,Cardiology,Asthma,--,UnitedHealth,Discharged
+PAT-00642,Elizabeth Tanaka,elizabeth.tanaka@hospital.org,+1-438-985-1173,59,Female,O-,2024-05-26,Neurology,Bronchitis,32720.61,Medicaid,Discharged
+PAT-00643,Linda Rodriguez,linda.rodriguez@outlook.com,+1-801-297-2769,14,Male,A-,31/13/2024,Oncology,Pneumonia,6736.09,Medicare,Deceased
+PAT-00644,Jennifer Miller,jennifer.miller@hospital.org,+1-942-735-8284,24,Male,B+,N/A,Cardiology,Fracture,15927.51,UnitedHealth,Deceased
+PAT-00645,John Martinez,john.martinez@health.net,+1-994-249-3415,61,Female,AB-,2023-08-20,Dermatology,Hypertension,26125.19,Medicaid,Transferred
+PAT-00646,James Brown,james.brown@health.net,+1-772-979-1894,55,Female,B-,2023-02-15,Oncology,Diabetes Type 2,17406.82,Medicaid,Under Observation
+PAT-00647,Raj Kim,raj.kim@hospital.org,+1-814-809-6425,75,Non-Binary,AB-,31/13/2024,Pediatrics,Anemia,TBD,BlueCross,Under Observation
+PAT-00648,Fatima Tanaka,fatima.tanaka@gmail.com,+1-707-324-1060,82,Male,B-,2024-08-13,Oncology,Migraine,24296.94,None,Deceased
+PAT-00649,Yuki Kim,yuki.kim@hospital.org,+1-410-509-4018,1,Female,A+,2022-06-01,Dermatology,Hypertension,n/a,Aetna,Deceased
+PAT-00650,Linda Brown,user@@double.com,+1-983-468-1719,4,Male,B-,2023-08-05,Orthopedics,Migraine,44326.42,Medicaid,Transferred
+PAT-00651,Jennifer Chen,jennifer.chen@health.net,+1-451-282-4211,3,Male,AB+,2022-07-27,Cardiology,Fracture,19256.68,None,Discharged
+PAT-00652,Jennifer Ali,jennifer.ali@yahoo.com,+1-512-567-4934,48,Female,B+,N/A,Radiology,Diabetes Type 2,6365.42,Aetna,Transferred
+PAT-00653,Patricia Rodriguez,patricia.rodriguez@hospital.org,+1-911-483-6209,,Female,B-,2022-04-05,Oncology,Flu,15062.05,Aetna,Deceased
+PAT-00654,Patricia Smith,patricia.smith@outlook.com,+1-329-971-9327,75,Female,B-,2022-06-16,Emergency,Pneumonia,3711.22,Medicare,Under Observation
+PAT-00655,Yuki Ali,test@.com,+1-583-610-9501,60,Male,AB-,2025-12-30,Dermatology,Flu,34878.23,Medicaid,Under Observation
+PAT-00656,Linda Jones,linda.jones@health.net,+1-610-753-1599,unknown,Male,B-,2024-07-14,Oncology,Anemia,11320.39,UnitedHealth,Under Observation
+PAT-00657,Elizabeth Williams,elizabeth.williams@outlook.com,+1-460-663-2388,18,Male,AB+,2024-06-29,neuro,Migraine,29406.13,UnitedHealth,Deceased
+PAT-00658,Michael Davis,michael.davis@hospital.org,+1-642-518-7021,64,Female,AB+,2024-02-23,Cardiology,Fracture,22363.58,Cigna,Discharged
+PAT-00659,Jennifer Ali,jennifer.ali@gmail.com,+1-501-962-9220,66,Non-Binary,A-,2023-07-21,Oncology,Diabetes Type 2,6370.1,Cigna,Discharged
+PAT-00660,David Brown,david.brown@outlook.com,+1-401-791-6394,33,Female,AB+,00/00/0000,Orthopedics,Flu,45662.94,BlueCross,Deceased
+PAT-00661,John Chen,john.chen@outlook.com,+1-613-515-1194,61,Non-Binary,B+,2024-03-25,ORTHO,Migraine,-2683.59,Aetna,Under Observation
+PAT-00662,Patricia Rodriguez,patricia.rodriguez@health.net,+1-765-875-8679,93,Female,AB-,2022-06-25,Dermatology,Migraine,21725.25,Medicaid,Under Observation
+PAT-00663,Patricia Davis,patricia.davis@hospital.org,+1-771-130-7139,18,Non-Binary,B+,2023-09-18,Cardiology,COVID-19,40614.87,None,Deceased
+PAT-00664,Jennifer Brown,jennifer.brown@hospital.org,+1-635-802-7608,89,Non-Binary,AB+,2023-10-30,Cardiology,UNKNOWN,39375.21,Aetna,Transferred
+PAT-00665,Jennifer Martinez,notanemail,+1-822-687-7404,49,Male,O+,2022-05-11,Radiology,Migraine,24001.49,Cigna,Under Observation
+PAT-00666,Aisha Ali,aisha.ali@outlook.com,+1-295-275-2709,87,Non-Binary,B+,2022-03-07,Emergency,Hypertension,9741.26,BlueCross,Under Observation
+PAT-00667,John Brown,john.brown@yahoo.com,+1-498-775-9591,9,Female,A+,2024-01-25,Cardiology,Fracture,16675.22,UnitedHealth,Under Observation
+PAT-00668,Robert Johnson,robert.johnson@yahoo.com,+1-749-528-8835,9,Female,B-,2022-09-24,Oncology,Asthma,21893.93,Medicaid,Under Observation
+PAT-00669,Robert Martinez,robert.martinez@health.net,+1-517-701-4325,65,Non-Binary,O-,2023-07-19,Oncology,Hypertension,49558.71,UnitedHealth,Discharged
+PAT-00670,Carlos Miller,carlos.miller@health.net,+1-452-638-6388,73,Female,O-,2024-08-05,Cardiology,Diabetes Type 2,14751.63,UnitedHealth,Deceased
+PAT-00671,Raj Chen,raj.chen@outlook.com,+1-600-727-3869,54,Male,B+,2025-06-19,Radiology,COVID-19,19540.92,Medicaid,Transferred
+PAT-00672,Raj Martinez,raj.martinez@gmail.com,+1-602-815-1715,31,Male,AB+,2025-07-10,Pediatrics,Diabetes Type 2,35053.18,Medicaid,Transferred
+PAT-00673,Fatima Davis,fatima.davis@hospital.org,+1-980-666-2986,48,Male,A-,2024-10-30,Dermatology,Anemia,-2543.39,Cigna,Transferred
+PAT-00674,David Smith,david.smith@hospital.org,+1-227-174-8567,49,Female,O+,2023-02-03,Radiology,Hypertension,1031.5,BlueCross,Transferred
+PAT-00675,Jennifer Patel,jennifer.patel@hospital.org,+1-696-572-2117,11,Non-Binary,B-,2024-06-15,Orthopedics,COVID-19,41111.12,None,Transferred
+PAT-00676,Robert Chen,robert.chen@gmail.com,+1-821-202-3903,-10,Male,O+,2022-12-11,Neurology,Hypertension,none,Aetna,Under Observation
+PAT-00677,Jennifer Williams,jennifer.williams@yahoo.com,+1-931-135-9721,28,Female,A+,2025-07-24,Neurology,Anemia,34672.16,UnitedHealth,Discharged
+PAT-00678,Elizabeth Smith,elizabeth.smith@gmail.com,+1-990-486-4305,32,Female,B-,2023-02-14,Neurology,diabtes,21373.3,BlueCross,Deceased
+PAT-00679,Carlos Brown,carlos.brown@gmail.com,+1-425-198-3750,93,Male,A+,2024-05-01,Neurology,Bronchitis,16472.64,Medicaid,Transferred
+PAT-00680,Elizabeth Brown,elizabeth.brown@health.net,+1-604-538-2979,-10,Male,A-,2024-01-01,Dermatology,Fracture,1242.23,Medicaid,Deceased
+PAT-00681,James Miller,james.miller@yahoo.com,+1-669-325-2081,85,Female,AB-,2022-03-31,Neurology,Migraine,20849.29,None,Under Observation
+PAT-00682,Mary Kim,mary.kim@health.net,+1-782-275-5127,13,Non-Binary,AB-,2025-07-16,Radiology,Fracture,16936.3,Medicaid,Deceased
+PAT-00683,Carlos Patel,carlos.patel@hospital.org,+1-269-443-1289,78,Non-Binary,O-,2024-02-23,Oncology,Flu,29579.69,BlueCross,Transferred
+PAT-00684,James Martinez,james.martinez@gmail.com,+1-516-342-8020,32,Non-Binary,A-,2022-05-03,Orthopedics,Bronchitis,25186.96,Aetna,Transferred
+PAT-00685,Michael Brown,michael.brown@gmail.com,+1-443-842-8270,95,Female,B+,2023-07-24,Dermatology,Hypertension,26283.21,UnitedHealth,Deceased
+PAT-00686,Yuki Smith,yuki.smith@yahoo.com,+1-950-439-6615,32,Male,A+,2025-09-23,Oncology,Migraine,30599.13,UnitedHealth,Deceased
+PAT-00687,Robert Davis,robert.davis@gmail.com,+1-266-990-9055,9,Male,A+,2025-07-23,Orthopedics,Migraine,6715.27,Aetna,Transferred
+PAT-00688,Patricia Rodriguez,patricia.rodriguez@gmail.com,+1-636-842-8652,40,Male,B-,2023-05-17,Radiology,Fracture,30489.64,Cigna,Deceased
+PAT-00689,Elizabeth Davis,elizabeth.davis@yahoo.com,+1-478-983-8883,11,Female,O+,2024-02-13,Orthopedics,COVID-19,22348.12,Medicare,Under Observation
+PAT-00690,Yuki Williams,yuki.williams@hospital.org,+1-220-880-7249,55,Male,AB+,2025-05-03,Orthopedics,Flu,36469.09,Cigna,Under Observation
+PAT-00691,Linda Jones,user@@double.com,+1-490-484-8878,10,Female,B+,2024-08-19,Oncology,Fracture,45848.53,BlueCross,Discharged
+PAT-00692,Carlos Rodriguez,carlos.rodriguez@outlook.com,+1-703-514-7812,51,Non-Binary,AB-,2024-02-26,Emergency,Asthma,32231.91,Medicare,Discharged
+PAT-00693,Michael Ali,michael.ali@gmail.com,+1-327-494-3660,25,Female,AB+,2023-12-15,Emergency,Bronchitis,34974.54,Medicaid,Under Observation
+PAT-00694,Fatima Miller,fatima.miller@yahoo.com,+1-448-589-1565,47,Non-Binary,A+,2025-11-29,Orthopedics,Asthma,30469.06,Medicaid,Transferred
+PAT-00695,John Brown,john.brown@health.net,+1-792-778-3644,2,Male,A-,2025-08-12,Radiology,Anemia,35450.45,BlueCross,Transferred
+PAT-00696,Fatima Miller,notanemail,+1-637-358-5951,65,Non-Binary,O+,2025-04-15,Pediatrics,Anemia,37746.88,Medicaid,Discharged
+PAT-00753,Mary Patel,mary.patel@health.net,+1-995-916-6642,19,Female,B-,2024-03-26,Pediatrics,Hypertension,49357.76,None,Under Observation
+PAT-00698,James Johnson,james.johnson@gmail.com,+1-992-813-7845,68,Female,AB+,2024-06-01,Orthopedics,,19045.24,Medicaid,Transferred
+PAT-00699,Patricia Davis,patricia.davis@yahoo.com,+1-714-212-8383,73,Male,B+,2023-02-16,Cardiology,Fracture,40554.34,Aetna,Deceased
+PAT-00700,Fatima Chen,fatima.chen@hospital.org,+1-651-741-2789,82,Male,A-,2023-08-24,Neurology,Anemia,6671.74,BlueCross,Deceased
+PAT-00701,James Martinez,james.martinez@yahoo.com,+1-689-596-2651,2,Male,AB+,2022-01-15,Cardiology,Diabetes Type 2,10947.88,None,Discharged
+PAT-00702,Michael Martinez,michael.martinez@health.net,+1-979-372-8961,61,Female,O+,2023-11-21,Dermatology,Bronchitis,49972.53,None,Transferred
+PAT-00703,Jennifer Patel,jennifer.patel@hospital.org,+1-587-725-1937,unknown,Female,A-,2022-01-07,Emergency,N/A,36398.4,Aetna,Discharged
+PAT-00704,Elizabeth Johnson,elizabeth.johnson@health.net,+1-486-816-5072,48,Female,O-,2024-11-20,Radiology,Migraine,TBD,Medicaid,Deceased
+PAT-00705,James Patel,james.patel@outlook.com,+1-246-926-6333,87,Female,B-,,neuro,Anemia,-1496.68,None,Discharged
+PAT-00706,Jennifer Miller,jennifer.miller@hospital.org,+1-874-977-2645,94,Female,AB+,2025-05-28,Oncology,Fracture,43558.01,Medicare,Discharged
+PAT-00707,Robert Davis,robert.davis@gmail.com,+1-508-952-9990,60,Male,O-,2022-08-25,Emergency,Flu,12424.63,Aetna,Transferred
+PAT-00708,Yuki Patel,yuki.patel@gmail.com,+1-308-545-1478,21,Female,O+,2023-07-29,Oncology,Asthma,33463.67,Medicaid,Discharged
+PAT-00709,Aisha Williams,aisha.williams@health.net,+1-848-842-9060,12,Non-Binary,AB-,2023-04-04,Neurology,Bronchitis,19162.01,Medicaid,Under Observation
+PAT-00710,Aisha Patel,aisha.patel@health.net,+1-647-927-4823,29,Female,A-,2023-08-19,Neurology,Diabetes Type 2,4912.4,Medicaid,Transferred
+PAT-00711,Raj Johnson,raj.johnson@health.net,+1-576-230-6134,49,Non-Binary,A+,2023-09-29,Cardiology,Pneumonia,27012.35,None,Under Observation
+PAT-00712,Michael Garcia,michael.garcia@outlook.com,+1-895-915-3069,67,Non-Binary,B-,2022-08-07,Radiology,Hypertension,27145.5,UnitedHealth,Deceased
+PAT-00713,Robert Chen,robert.chen@outlook.com,+1-424-611-8467,19,Non-Binary,AB+,2022-10-26,Cardiology,Pneumonia,16346.9,Medicare,Discharged
+PAT-00714,John Chen,test@.com,+1-689-746-4534,64,Female,O+,2022-05-01,oncollogy,Fracture,41480.29,Aetna,Transferred
+PAT-00715,Raj Kim,raj.kim@gmail.com,+1-994-283-8987,94,Female,AB+,2025-09-12,Orthopedics,Hypertension,27623.17,Cigna,Under Observation
+PAT-00716,Aisha Davis,aisha.davis@outlook.com,+1-975-500-7407,10,Non-Binary,AB+,2023-08-02,Oncology,Flu,19991.74,Aetna,Deceased
+PAT-00717,Yuki Tanaka,spaces in@email.com,+1-255-970-5981,59,Non-Binary,B+,2025-03-28,Orthopedics,COVID-19,34949.8,Cigna,Transferred
+PAT-00718,Patricia Brown,patricia.brown@yahoo.com,,47,Non-Binary,A-,2025-10-21,Orthopedics,Anemia,47544.71,UnitedHealth,Transferred
+PAT-00719,Fatima Smith,fatima.smith@gmail.com,N/A,7,Male,AB-,2025-04-30,Radiology,Fracture,31535.14,UnitedHealth,Transferred
+PAT-00720,James Johnson,james.johnson@yahoo.com,+1-606-600-5959,89,Non-Binary,B+,2025-08-29,Radiology,Diabetes Type 2,38997.68,None,Under Observation
+PAT-00721,John Patel,john.patel@hospital.org,+1-576-111-2966,15,Male,A-,2024-09-28,Oncology,Hypertension,29549.1,Medicare,Under Observation
+PAT-00722,John Kim,john.kim@gmail.com,+1-807-285-7290,62,Non-Binary,O+,2023-09-04,Orthopedics,Diabetes Type 2,16598.83,Medicaid,Transferred
+PAT-00723,Michael Chen,michael.chen@gmail.com,+1-603-669-9788,68,Female,A-,2024-11-28,Neurology,Migraine,48301.21,BlueCross,
+PAT-00724,Carlos Martinez,carlos.martinez@yahoo.com,+1-205-668-8327,41,Male,A+,2022-09-21,Oncology,Fracture,4847.14,Cigna,Discharged
+PAT-00725,Mary Johnson,mary.johnson@health.net,+1-505-472-9919,22,Female,A+,2099-01-01,Pediatrics,Hypertension,47337.62,Medicare,Deceased
+PAT-00726,Aisha Rodriguez,aisha.rodriguez@hospital.org,+1-343-690-9035,89,Female,AB-,2025-05-26,Oncology,Diabetes Type 2,33299.54,BlueCross,Transferred
+PAT-00727,James Brown,james.brown@yahoo.com,+1-506-976-4526,18,Non-Binary,B-,2025-04-26,Dermatology,Asthma,6860.36,Medicare,Under Observation
+PAT-00728,Mary Rodriguez,mary.rodriguez@outlook.com,+1-466-490-3675,unknown,Female,A-,,Radiology,Fracture,27027.26,BlueCross,Deceased
+PAT-00729,Aisha Kim,aisha.kim@yahoo.com,+1-931-481-9379,78,Male,O+,2022-11-11,Dermatology,Anemia,19257.62,Medicare,Transferred
+PAT-00730,Mary Jones,mary.jones@gmail.com,+1-744-212-9984,53,Male,AB-,2025-08-04,Neurology,Bronchitis,45507.65,None,Deceased
+PAT-00731,Robert Chen,robert.chen@yahoo.com,+1-480-110-2604,49,Male,O+,2022-08-04,Neurology,Fracture,26560.55,Cigna,Under Observation
+PAT-00732,Mary Rodriguez,mary.rodriguez@outlook.com,+1-917-685-5620,71,Female,A-,2022-04-09,Orthopedics,Bronchitis,47352.26,UnitedHealth,Transferred
+PAT-00733,Jennifer Tanaka,jennifer.tanaka@health.net,+1-764-708-7597,62,Non-Binary,B+,2023-06-15,Cardiology,Flu,35804.52,Medicaid,Transferred
+PAT-00734,Robert Miller,robert.miller@health.net,+1-953-373-1866,93,Non-Binary,AB-,2025-12-19,Oncology,Pneumonia,21203.07,UnitedHealth,Transferred
+PAT-00735,Linda Garcia,linda.garcia@hospital.org,+1-714-393-5519,55,Non-Binary,B-,2023-09-18,Neurology,Asthma,-4294.91,Cigna,Discharged
+PAT-00736,Aisha Johnson,aisha.johnson@gmail.com,+1-947-345-2534,22,Non-Binary,A+,2022-06-23,Pediatrics,Flu,46514.66,None,Discharged
+PAT-00737,Michael Patel,michael.patel@health.net,+1-948-239-8858,64,Non-Binary,A-,2024-04-10,Cardiology,Pneumonia,9914.11,None,Discharged
+PAT-00738,Raj Miller,raj.miller@health.net,+1-967-453-5001,95,Non-Binary,A+,2025-05-28,Emergency,Fracture,33888.85,None,Transferred
+PAT-00739,Robert Johnson,robert.johnson@outlook.com,+1-336-626-6788,7,Female,O-,2024-02-16,Orthopedics,Bronchitis,48501.56,Cigna,Transferred
+PAT-00740,Carlos Rodriguez,user@@double.com,+1-497-406-8915,38,Female,B-,2022-01-05,Radiology,Migraine,46191.29,Medicaid,Discharged
+PAT-00741,Fatima Davis,fatima.davis@health.net,+1-699-158-6828,1,Non-Binary,O-,2023-11-04,ORTHO,Bronchitis,5804.62,Cigna,Transferred
+PAT-00742,Michael Garcia,michael.garcia@gmail.com,+1-303-541-9061,26,Male,B+,2024-04-21,XYZ,COVID-19,842.07,None,Deceased
+PAT-00743,Patricia Davis,patricia.davis@hospital.org,+1-583-406-6971,55,Male,AB+,2022-08-11,Emergency,COVID-19,8510.8,Cigna,Under Observation
+PAT-00744,James Garcia,james.garcia@yahoo.com,+1-313-294-5667,6,Male,O+,2024-05-12,Dermatology,Hypertension,8435.47,Aetna,Under Observation
+PAT-00745,Aisha Jones,aisha.jones@gmail.com,+1-631-600-9119,88,Non-Binary,B+,2023-10-28,Radiology,Flu,36436.73,Medicaid,Under Observation
+PAT-00746,Robert Johnson,robert.johnson@gmail.com,+1-221-229-3548,200,Non-Binary,A+,PENDING,Oncology,Hypertension,34076.36,Cigna,Under Observation
+PAT-00747,Elizabeth Kim,elizabeth.kim@gmail.com,+1-644-591-5742,37,Female,A-,2024-05-28,Oncology,Pneumonia,8048.54,Medicare,Transferred
+PAT-00748,Patricia Jones,patricia.jones@gmail.com,+1-469-817-5052,86,Female,B-,2024-08-28,Neurology,Flu,30749.47,Aetna,Transferred
+PAT-00749,Patricia Johnson,patricia.johnson@yahoo.com,+1-610-139-5486,25,Male,O+,2022-02-06,Oncology,Diabetes Type 2,43285.33,UnitedHealth,Under Observation
+PAT-00750,David Jones,david.jones@yahoo.com,+1-427-444-7980,62,Male,O+,2025-08-11,Cardiology,Asthma,5947.72,Cigna,Deceased
+PAT-00751,Jennifer Kim,jennifer.kim@hospital.org,+1-452-427-1779,24,Male,A+,2022-04-17,Dermatology,Migraine,14623.19,Cigna,Discharged
+PAT-00752,Michael Williams,michael.williams@outlook.com,+1-703-472-6476,39,Male,A-,2025-10-02,,Flu,38637.95,Aetna,Deceased
+PAT-00753,Jennifer Kim,jennifer.kim@outlook.com,+1-960-897-9664,78,Female,B-,2025-08-24,Pediatrics,Migraine,29424.2,BlueCross,Discharged
+PAT-00754,Robert Patel,robert.patel@health.net,+1-323-142-4120,25,Non-Binary,O-,2022-07-22,Neurology,Flu,31141.01,Cigna,Under Observation
+PAT-00755,Yuki Brown,yuki.brown@health.net,+1-938-257-1717,17,Male,O+,2025-02-01,Pediatrics,Flu,48768.74,Cigna,Under Observation
+PAT-00756,Aisha Kim,aisha.kim@gmail.com,+1-646-169-8910,54,Non-Binary,A+,2022-12-08,Pediatrics,Fracture,14837.99,Medicare,Discharged
+PAT-00757,Yuki Kim,,+1-958-934-7512,64,Non-Binary,A-,2022-12-05,Emergency,Flu,19515.45,None,Under Observation
+PAT-00758,Michael Martinez,michael.martinez@outlook.com,+1-411-288-1058,21,Non-Binary,B-,2025-04-27,Cardiology,Flu,23044.33,Medicaid,Deceased
+PAT-00759,John Chen,john.chen@yahoo.com,+1-503-825-5399,71,Male,B+,2023-04-04,Cardiology,Flu,12291.73,BlueCross,Transferred
+PAT-00760,Fatima Jones,fatima.jones@yahoo.com,+1-476-994-1844,83,Male,B-,2024-12-30,Neurology,Hypertension,free,Medicaid,Deceased
+PAT-00761,Jennifer Johnson,jennifer.johnson@health.net,+1-470-839-3189,53,Non-Binary,AB+,2023-10-27,Cardiology,Hypertension,41284.62,Aetna,Deceased
+PAT-00762,Robert Jones,robert.jones@gmail.com,+1-750-773-2743,93,Non-Binary,O+,2025-09-01,Pediatrics,Pneumonia,27768.45,None,Under Observation
+PAT-00763,Patricia Garcia,patricia.garcia@outlook.com,+1-408-695-7479,20,Female,B-,2024-06-07,Dermatology,Hypertnsion,45157.32,BlueCross,Under Observation
+PAT-00764,Robert Davis,spaces in@email.com,+1-380-293-9036,94,Male,AB+,2022-02-13,Pediatrics,Fracture,44320.03,None,Under Observation
+PAT-00765,Aisha Martinez,aisha.martinez@yahoo.com,+1-271-246-2180,55,Male,O-,2025-08-14,Radiology,Diabetes Type 2,36353.19,Aetna,Discharged
+PAT-00766,Elizabeth Johnson,elizabeth.johnson@hospital.org,+1-593-121-2802,2,Non-Binary,A+,2022-09-28,Oncology,Diabetes Type 2,13749.0,Medicaid,Discharged
+PAT-00767,Yuki Smith,yuki.smith@gmail.com,+1-755-853-6544,91,Male,B-,2022-10-13,Emergency,Pneumonia,44673.32,None,Transferred
+PAT-00768,John Garcia,john.garcia@hospital.org,+1-358-349-1915,70,Non-Binary,AB+,2025-07-09,Neurology,Hypertension,41333.78,BlueCross,Deceased
+PAT-00769,Mary Rodriguez,mary.rodriguez@hospital.org,+1-345-101-4675,4,Male,O+,2024-02-29,Orthopedics,Bronchitis,32940.55,Aetna,Under Observation
+PAT-00770,Aisha Ali,aisha.ali@gmail.com,+1-703-273-2804,29,Male,AB+,2024-01-02,Neurology,Pneumonia,17019.38,Cigna,Discharged
+PAT-00771,Fatima Smith,fatima.smith@health.net,+1-354-282-8022,68,Female,B+,2025-10-23,Radiology,Fracture,44709.32,Medicaid,Deceased
+PAT-00772,Elizabeth Chen,elizabeth.chen@outlook.com,+1-556-996-2702,35,Female,AB-,2023-06-28,oncollogy,Hypertension,43154.84,Aetna,Transferred
+PAT-00773,Jennifer Williams,jennifer.williams@hospital.org,+1-657-838-8838,9,Male,O+,2023-07-25,Orthopedics,Diabetes Type 2,16491.14,Aetna,Transferred
+PAT-00260,Yuki Miller,yuki.miller@outlook.com,+1-526-606-7944,62,Non-Binary,O+,2025-05-17,Dermatology,Fracture,40205.98,Medicaid,Transferred
+PAT-00775,Michael Miller,michael.miller@health.net,+1-709-651-9745,64,Non-Binary,B-,2024-02-27,Neurology,Pneumonia,35888.59,Medicare,Transferred
+PAT-00776,Raj Johnson,raj.johnson@yahoo.com,+1-570-102-4330,3,Female,O-,2022-10-01,Neurology,Hypertension,45612.42,Cigna,Transferred
+PAT-00777,John Davis,john.davis@yahoo.com,+1-764-531-4973,27,Male,A+,2022-10-10,Neurology,Fracture,19184.31,BlueCross,Under Observation
+PAT-00778,Jennifer Smith,jennifer.smith@gmail.com,+1-878-695-2208,62,Non-Binary,B+,2022-03-03,Orthopedics,Bronchitis,7493.24,Aetna,Discharged
+PAT-00779,James Martinez,james.martinez@hospital.org,+1-353-883-3988,61,Non-Binary,B+,2024-12-16,Pediatrics,COVID-19,20870.36,Cigna,Under Observation
+PAT-00780,Yuki Patel,yuki.patel@gmail.com,+1-493-213-3554,8,Non-Binary,A+,2025-05-22,Orthopedics,Flu,null,UnitedHealth,Under Observation
+PAT-00781,Aisha Ali,aisha.ali@hospital.org,+1-767-828-5227,74,Non-Binary,AB+,31/13/2024,Oncology,Anemia,46606.79,Cigna,Discharged
+PAT-00782,David Miller,david.miller@yahoo.com,+1-960-316-7560,80,Male,B-,2024-03-14,Orthopedics,Flu,30451.63,BlueCross,Under Observation
+PAT-00783,Linda Garcia,linda.garcia@hospital.org,+1-589-268-1895,48,Non-Binary,O+,2023-02-03,Pediatrics,Diabetes Type 2,5667.8,Cigna,Deceased
+PAT-00784,James Brown,a@b,+1-366-654-2744,9,Male,A+,2023-09-26,Oncology,Flu,10485.43,BlueCross,Transferred
+PAT-00785,John Johnson,john.johnson@health.net,+1-778-145-8926,6,Male,AB-,2022-07-10,Pediatrics,Hypertension,49036.81,None,Deceased
+PAT-00786,Michael Rodriguez,michael.rodriguez@yahoo.com,+1-522-869-7400,93,Female,B+,2025-12-10,Neurology,Bronchitis,20660.68,Medicaid,Discharged
+PAT-00787,David Tanaka,david.tanaka@yahoo.com,+1-224-701-7260,62,Non-Binary,A+,2023-08-18,Orthopedics,Fracture,34277.51,BlueCross,Discharged
+PAT-00788,Raj Brown,raj.brown@yahoo.com,+1-897-769-3307,92,Male,AB-,2024-07-05,Orthopedics,Bronchitis,14896.66,Medicare,Under Observation
+PAT-00789,James Ali,james.ali@hospital.org,+1-444-313-2228,20,Non-Binary,O-,PENDING,Cardiology,Fracture,38432.71,Cigna,Discharged
+PAT-00790,Linda Johnson,linda.johnson@hospital.org,+1-521-273-5843,21,Male,AB+,2025-03-26,Dermatology,Bronchitis,4916.85,Aetna,Under Observation
+PAT-00791,John Davis,john.davis@outlook.com,+1-981-997-8242,84,Male,A-,2025-03-10,Emergency,Hypertension,18491.87,Cigna,Under Observation
+PAT-00792,Michael Chen,michael.chen@health.net,+1-896-232-8222,47,Non-Binary,AB-,2024-02-05,Neurology,Anemia,25544.15,Cigna,Discharged
+PAT-00793,Elizabeth Patel,user@@double.com,+1-958-909-5011,90,Non-Binary,A+,2022-11-13,Neurology,Asthma,19103.17,Medicare,Under Observation
+PAT-00470,Carlos Johnson,carlos.johnson@yahoo.com,+1-597-995-8573,200,Male,AB-,2024-08-12,,Flu,45056.26,UnitedHealth,Discharged
+PAT-00795,Mary Williams,mary.williams@gmail.com,+1-606-886-8096,26,Female,AB-,2022-05-13,Dermatology,Bronchitis,49823.69,UnitedHealth,Transferred
+PAT-00796,Raj Kim,raj.kim@hospital.org,+1-317-385-8447,5,Non-Binary,B+,2024-08-20,Orthopedics,Migraine,16349.24,BlueCross,Under Observation
+PAT-00797,James Ali,james.ali@outlook.com,+1-640-584-4496,7,Male,A+,2025-11-01,Radiology,Asthma,12977.53,Aetna,Discharged
+PAT-00798,Robert Johnson,robert.johnson@outlook.com,+1-614-183-5887,92,Female,O+,2024-12-10,Oncology,Asthma,9611.88,BlueCross,Discharged
+PAT-00799,Fatima Ali,fatima.ali@hospital.org,+1-550-871-5864,22,Male,AB-,2024-05-08,Emergency,N/A,-708.05,None,Transferred
+PAT-00800,Raj Miller,raj.miller@outlook.com,+1-909-684-7375,2,Non-Binary,B-,2022-06-09,Orthopedics,Bronchitis,33371.12,None,Deceased
