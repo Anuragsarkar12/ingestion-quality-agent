@@ -49,7 +49,7 @@ GE_EXPECTATIONS_DIR = "great_expectations/expectations"
 # =============================================================================
 
 # Maximum heal→validate retry cycles before declaring ALERT
-MAX_HEALING_ITERATIONS = 3
+MAX_HEALING_ITERATIONS = 5
 
 # =============================================================================
 # PERFORMANCE / SCALABILITY GUARDS
