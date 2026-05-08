@@ -30,3 +30,4 @@ great_expectations/expectations/*.json
 # Environment
 .env
 .env.local
+database/

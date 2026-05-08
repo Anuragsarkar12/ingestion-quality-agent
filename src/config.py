@@ -26,7 +26,7 @@ OLLAMA_MODEL = "llama3"
 # DATABASE CONFIGURATION
 # =============================================================================
 
-DATABASE_PATH = "database/orders.db"
+DATABASE_PATH = "database/final.db"
 TABLE_STAGING = "orders_staging"
 TABLE_CLEAN = "orders_clean"
 TABLE_QUARANTINE = "orders_quarantine"

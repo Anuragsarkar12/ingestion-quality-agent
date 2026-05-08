@@ -28,6 +28,42 @@ logger = logging.getLogger(__name__)
 
 
 # =============================================================================
+# INTERNAL: SQLite PERSISTENCE HELPER
+# =============================================================================
+
+def save_df_to_db(
+    df: pd.DataFrame,
+    table_name: str,
+    if_exists: str = "replace",
+) -> bool:
+    """
+    Persist a DataFrame into the SQLite mock DB.
+
+    Args:
+        df:         DataFrame to write.
+        table_name: Target table (e.g. TABLE_STAGING, TABLE_CLEAN, TABLE_QUARANTINE).
+        if_exists:  'replace' to overwrite, 'append' to add rows.
+
+    Returns True on success, False on failure (never raises — DB writes
+    are additive and must not break the pipeline).
+    """
+    db_path = getattr(_cfg, "DATABASE_PATH", DATABASE_PATH)
+    try:
+        os.makedirs(os.path.dirname(os.path.abspath(db_path)), exist_ok=True)
+        conn = sqlite3.connect(db_path)
+        df.to_sql(table_name, conn, if_exists=if_exists, index=False)
+        conn.close()
+        logger.info(
+            f"[DB] Persisted {len(df)} rows → {table_name} "
+            f"(mode={if_exists}, db={db_path})"
+        )
+        return True
+    except Exception as e:
+        logger.warning(f"[DB] Failed to write '{table_name}': {e}")
+        return False
+
+
+# =============================================================================
 # MCP TOOL REGISTRY
 # =============================================================================
 

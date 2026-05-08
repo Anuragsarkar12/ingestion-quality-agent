@@ -29,6 +29,7 @@ import queue
 from datetime import datetime
 
 import pandas as pd
+import sqlite3
 import streamlit as st
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -306,10 +307,11 @@ def main() -> None:
                         st.caption(f"`{col}` → **{stype}**")
 
     # ── Tabs ──────────────────────────────────────────────────────────────────
-    tab_upload, tab_intel, tab_results = st.tabs([
+    tab_upload, tab_intel, tab_results, tab_db = st.tabs([
         "📤 Ingestion",
         "🧠 Agent Intelligence",
         "💎 Final Clean Room",
+        "🗄️ DB Explorer",
     ])
 
     # =========================================================================
@@ -611,6 +613,242 @@ def main() -> None:
 
         else:
             st.info("Results will appear here after the agent completes its run.")
+
+    # =========================================================================
+    # TAB 4 — DB EXPLORER
+    # =========================================================================
+    with tab_db:
+        st.subheader("🗄️ Mock Database Explorer")
+
+        db_path = getattr(_cfg, "DATABASE_PATH", "database/final.db")
+
+        # ── Persist button — write pipeline results to DB on demand ────────
+        st.markdown("#### 💾 Persist Pipeline Results")
+
+        pipeline_res = st.session_state.get("pipeline_results")
+        if not pipeline_res:
+            st.info(
+                "No pipeline results available yet. "
+                "Run the pipeline first, then come back here to persist."
+            )
+        else:
+            clean_path     = pipeline_res.get("clean_path", "")
+            quarantine_path = pipeline_res.get("quarantine_path", "")
+
+            c1, c2 = st.columns(2)
+            c1.caption(f"**Clean:** `{os.path.basename(clean_path) if clean_path else '—'}`")
+            c2.caption(
+                f"**Quarantine:** `{os.path.basename(quarantine_path) if quarantine_path else '—'}`"
+            )
+
+            if st.button(
+                "💾 Persist to Database",
+                type="primary",
+                use_container_width=True,
+                key="db_persist_btn",
+            ):
+                from src.mcp_tools import save_df_to_db
+
+                # Derive table names from uploaded filename
+                uploaded_name = st.session_state.get("uploaded_filename", "data.csv")
+                base_name = os.path.splitext(uploaded_name)[0]
+                # Sanitize: lowercase, replace spaces/hyphens with underscores
+                base_name = base_name.lower().replace(" ", "_").replace("-", "_")
+
+                tbl_clean      = f"{base_name}_clean"
+                tbl_quarantine = f"{base_name}_quarantine"
+
+                persisted = []
+                errors = []
+
+                # Clean
+                if clean_path and os.path.exists(clean_path):
+                    try:
+                        clean_df = _safe_read_csv(clean_path)
+                        if not clean_df.empty:
+                            save_df_to_db(clean_df, tbl_clean, if_exists="replace")
+                            persisted.append(f"✅ **{tbl_clean}**: {len(clean_df):,} rows")
+                    except Exception as e:
+                        errors.append(f"Clean: {e}")
+
+                # Quarantine
+                if quarantine_path and os.path.exists(quarantine_path):
+                    try:
+                        q_df = _safe_read_csv(quarantine_path)
+                        if not q_df.empty:
+                            save_df_to_db(q_df, tbl_quarantine, if_exists="replace")
+                            persisted.append(f"✅ **{tbl_quarantine}**: {len(q_df):,} rows")
+                    except Exception as e:
+                        errors.append(f"Quarantine: {e}")
+
+                if persisted:
+                    st.success("Persisted to database:")
+                    for p in persisted:
+                        st.markdown(p)
+                if errors:
+                    for err in errors:
+                        st.error(err)
+                if not persisted and not errors:
+                    st.warning("No CSV files found to persist.")
+
+        # ── Table browser & SQL ────────────────────────────────────────────
+        st.markdown("---")
+
+        if not os.path.exists(db_path):
+            st.warning(
+                f"Database not found at `{db_path}`. "
+                "Persist pipeline results first."
+            )
+        else:
+            try:
+                conn = sqlite3.connect(db_path)
+
+                # Discover tables
+                tables_df = pd.read_sql_query(
+                    "SELECT name FROM sqlite_master WHERE type='table' "
+                    "ORDER BY name;", conn
+                )
+                table_names = tables_df["name"].tolist()
+
+                if not table_names:
+                    st.info("Database exists but has no tables. Persist pipeline results first.")
+                else:
+                    st.caption(f"📁 **Database:** `{db_path}` — {len(table_names)} table(s)")
+
+                    # ── Table Management ──────────────────────────────────
+                    st.markdown("#### 🗂️ All Tables")
+
+                    for tbl_name in table_names:
+                        cnt = pd.read_sql_query(
+                            f'SELECT COUNT(*) as cnt FROM "{tbl_name}"', conn
+                        )["cnt"].iloc[0]
+
+                        col_left, col_right = st.columns([4, 1])
+                        col_left.markdown(f"**{tbl_name}** — `{int(cnt):,}` rows")
+                        if col_right.button(
+                            "🗑️ Drop",
+                            key=f"dropmgr_{tbl_name}",
+                        ):
+                            conn.execute(f'DROP TABLE IF EXISTS "{tbl_name}"')
+                            conn.commit()
+                            st.toast(f"Dropped `{tbl_name}`", icon="🗑️")
+                            st.rerun()
+
+                    st.markdown("---")
+                    # ── Table browser ─────────────────────────────────────
+                    st.markdown("#### 📋 Table Browser")
+
+                    selected_table = st.selectbox(
+                        "Select a table to preview",
+                        table_names,
+                        key="db_table_select",
+                    )
+
+                    if selected_table:
+                        count_row = pd.read_sql_query(
+                            f'SELECT COUNT(*) as cnt FROM "{selected_table}"', conn
+                        )
+                        row_count = int(count_row["cnt"].iloc[0])
+
+                        col_info = pd.read_sql_query(
+                            f'PRAGMA table_info("{selected_table}")', conn
+                        )
+
+                        col1, col2, col3 = st.columns([2, 2, 3])
+                        col1.metric("Rows", f"{row_count:,}")
+                        col2.metric("Columns", len(col_info))
+
+                        with col3:
+                            if st.button(
+                                f"🗑️ Drop {selected_table}",
+                                key=f"drop_{selected_table}",
+                                type="secondary",
+                            ):
+                                try:
+                                    conn.execute(f'DROP TABLE IF EXISTS "{selected_table}"')
+                                    conn.commit()
+                                    st.success(f"Dropped `{selected_table}`")
+                                    st.rerun()
+                                except Exception as drop_err:
+                                    st.error(f"Drop failed: {drop_err}")
+
+                        # Schema
+                        with st.expander("📐 Schema", expanded=False):
+                            schema_df = col_info[["name", "type", "notnull"]].rename(
+                                columns={"name": "Column", "type": "Type", "notnull": "Not Null"}
+                            )
+                            schema_df["Not Null"] = schema_df["Not Null"].map(
+                                {1: "✅", 0: "—"}
+                            )
+                            st.dataframe(schema_df, use_container_width=True, hide_index=True)
+
+                        # Preview
+                        preview_limit = st.slider(
+                            "Preview rows", 5, 200, 25, key="db_preview_limit"
+                        )
+                        preview_df = pd.read_sql_query(
+                            f'SELECT * FROM "{selected_table}" LIMIT {preview_limit}', conn
+                        )
+                        st.dataframe(preview_df, use_container_width=True, hide_index=True)
+
+                        # Download
+                        full_df = pd.read_sql_query(
+                            f'SELECT * FROM "{selected_table}"', conn
+                        )
+                        csv_data = full_df.to_csv(index=False).encode("utf-8")
+                        st.download_button(
+                            f"⬇️ Download {selected_table} ({row_count:,} rows)",
+                            csv_data,
+                            file_name=f"{selected_table}.csv",
+                            mime="text/csv",
+                            key=f"dl_{selected_table}",
+                        )
+
+                    # ── Custom SQL query ──────────────────────────────────
+                    st.markdown("---")
+                    st.markdown("#### 🔍 Custom SQL Query")
+                    st.caption(
+                        "Supports all SQL: `SELECT`, `DROP TABLE`, `DELETE`, "
+                        "`UPDATE`, `INSERT`, `ALTER TABLE`, etc."
+                    )
+
+                    default_sql = (
+                        f'SELECT * FROM {table_names[0]} LIMIT 10;'
+                        if table_names else "SELECT 1;"
+                    )
+                    sql_query = st.text_area(
+                        "Enter SQL query",
+                        value=default_sql,
+                        height=100,
+                        key="db_sql_input",
+                    )
+
+                    if st.button("▶️ Execute Query", key="db_run_sql"):
+                        try:
+                            sql_upper = sql_query.strip().upper()
+                            is_select = sql_upper.startswith("SELECT") or sql_upper.startswith("PRAGMA")
+
+                            if is_select:
+                                result_df = pd.read_sql_query(sql_query, conn)
+                                st.success(f"✅ {len(result_df)} row(s) returned")
+                                st.dataframe(
+                                    result_df, use_container_width=True, hide_index=True
+                                )
+                            else:
+                                cursor = conn.execute(sql_query)
+                                conn.commit()
+                                st.success(
+                                    f"✅ Query executed successfully. "
+                                    f"Rows affected: {cursor.rowcount}"
+                                )
+                                st.rerun()
+                        except Exception as sql_err:
+                            st.error(f"❌ SQL Error: {sql_err}")
+
+                conn.close()
+
+            except Exception as db_err:
+                st.error(f"Failed to connect to database: {db_err}")
 
 
 if __name__ == "__main__":
