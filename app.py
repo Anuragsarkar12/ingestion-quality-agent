@@ -307,11 +307,15 @@ def main() -> None:
                         st.caption(f"`{col}` → **{stype}**")
 
     # ── Tabs ──────────────────────────────────────────────────────────────────
-    tab_upload, tab_intel, tab_results, tab_db = st.tabs([
+    tab_upload, tab_intel, tab_results, tab_db, tab_lineage, tab_pii, tab_catalog, tab_graph = st.tabs([
         "📤 Ingestion",
         "🧠 Agent Intelligence",
         "💎 Final Clean Room",
         "🗄️ DB Explorer",
+        "🧬 Lineage Analyzer",
+        "🔐 PII & Governance",
+        "📚 Metadata Catalog",
+        "📈 Lineage Graph",
     ])
 
     # =========================================================================
@@ -708,7 +712,10 @@ def main() -> None:
                     "SELECT name FROM sqlite_master WHERE type='table' "
                     "ORDER BY name;", conn
                 )
-                table_names = tables_df["name"].tolist()
+                table_names = [
+                    t for t in tables_df["name"].tolist()
+                    if not t.startswith("sqlite_")
+                ]
 
                 if not table_names:
                     st.info("Database exists but has no tables. Persist pipeline results first.")
@@ -849,6 +856,323 @@ def main() -> None:
 
             except Exception as db_err:
                 st.error(f"Failed to connect to database: {db_err}")
+
+
+    # =========================================================================
+    # TAB 5 — LINEAGE ANALYZER
+    # =========================================================================
+    with tab_lineage:
+        st.subheader("🧬 SQL Lineage Analyzer")
+        st.caption("Paste SQL transformations to extract lineage, detect PII, and analyze governance risk.")
+
+        db_path = getattr(_cfg, "DATABASE_PATH", "database/final.db")
+
+        sql_input = st.text_area(
+            "Enter SQL transformation(s)",
+            height=180,
+            key="gov_sql_input",
+            placeholder="CREATE TABLE premium_customers AS\nSELECT customer_id, email, order_amount\nFROM stress_test_orders_clean\nWHERE order_amount > 1000;",
+        )
+
+        if st.button("🧬 Analyze Lineage & Governance", type="primary", use_container_width=True, key="gov_run"):
+            from src.graph.governance_workflow import build_governance_workflow, build_governance_initial_state
+            from src.governance.catalog import persist_all
+
+            with st.spinner("Running Governance Agent..."):
+                try:
+                    workflow = build_governance_workflow()
+                    initial = build_governance_initial_state(sql_input, db_path)
+                    result = workflow.invoke(initial, config={"recursion_limit": 20})
+
+                    st.session_state.gov_result = result
+
+                    # Persist metadata catalogue
+                    persist_all(
+                        result.get("lineage", {}),
+                        result.get("pii_detections", []),
+                        result.get("governance_report", {}),
+                        db_path,
+                    )
+
+                    st.toast("Governance analysis complete!", icon="✅")
+                except Exception as e:
+                    st.error(f"Governance agent error: {e}")
+
+        # Display results
+        gov_result = st.session_state.get("gov_result")
+        if gov_result:
+            lineage = gov_result.get("lineage", {})
+
+            if lineage.get("error"):
+                st.error(f"Lineage error: {lineage['error']}")
+            else:
+                col1, col2, col3 = st.columns(3)
+                col1.metric("Source Tables", len(lineage.get("source_tables", [])))
+                col2.metric("Target Tables", len(lineage.get("target_tables", [])))
+                col3.metric("Column Edges", len(lineage.get("edges", [])))
+
+                # Source / Target
+                st1, st2 = st.columns(2)
+                with st1:
+                    st.markdown("**📥 Source Tables**")
+                    for t in lineage.get("source_tables", []):
+                        st.code(t)
+                with st2:
+                    st.markdown("**📤 Target Tables**")
+                    for t in lineage.get("target_tables", []):
+                        st.code(t)
+
+                # Column lineage edges
+                edges = lineage.get("edges", [])
+                if edges:
+                    st.markdown("**🔗 Column Lineage**")
+                    edge_rows = []
+                    for e in edges:
+                        edge_rows.append({
+                            "Source Table": e["src_table"],
+                            "Source Column": e["src_col"],
+                            "→": "→",
+                            "Target Table": e["tgt_table"],
+                            "Target Column": e["tgt_col"],
+                            "Transform": e.get("transform", "direct"),
+                        })
+                    st.dataframe(pd.DataFrame(edge_rows), use_container_width=True, hide_index=True)
+
+                # Conditions
+                conditions = lineage.get("conditions", [])
+                if conditions:
+                    with st.expander("🔍 WHERE Conditions"):
+                        for c in conditions:
+                            st.code(c, language="sql")
+
+                # Reasoning trace
+                with st.expander("🧠 Agent Reasoning Trace"):
+                    for msg in gov_result.get("messages", []):
+                        agent = msg.get("agent", "?").upper()
+                        st.markdown(f"**{agent}** — *{msg.get('step', '')}*")
+                        st.caption(msg.get("content", ""))
+
+    # =========================================================================
+    # TAB 6 — PII & GOVERNANCE
+    # =========================================================================
+    with tab_pii:
+        st.subheader("🔐 PII Detection & Governance")
+
+        gov_result = st.session_state.get("gov_result")
+        if not gov_result:
+            st.info("Run the Lineage Analyzer first to detect PII and assess governance risk.")
+        else:
+            pii_detections = gov_result.get("pii_detections", [])
+            report = gov_result.get("governance_report", {})
+            db_path = getattr(_cfg, "DATABASE_PATH", "database/final.db")
+
+            # Risk banner
+            risk_level = report.get("risk_level", "LOW")
+            risk_colors = {
+                "LOW": "🟢", "MEDIUM": "🟡", "HIGH": "🟠", "CRITICAL": "🔴"
+            }
+            st.markdown(
+                f"### {risk_colors.get(risk_level, '⚪')} Overall Risk: **{risk_level}** "
+                f"({report.get('risk_score', 0):.0%})"
+            )
+            st.caption(report.get("summary", ""))
+
+            # PII detections
+            if pii_detections:
+                st.markdown("#### 🏷️ Detected PII Columns")
+                pii_rows = []
+                for d in pii_detections:
+                    pii_rows.append({
+                        "Table": d["table"],
+                        "Column": d["column"],
+                        "PII Type": d["pii_type"],
+                        "Confidence": f"{d['confidence']:.0%}",
+                        "Method": d["detection_method"],
+                        "Samples": ", ".join(str(s) for s in d.get("sample_values", [])[:3]),
+                    })
+                st.dataframe(pd.DataFrame(pii_rows), use_container_width=True, hide_index=True)
+            else:
+                st.success("No PII detected in the analyzed tables.")
+
+            # Recommendations
+            recs = report.get("recommendations", [])
+            if recs:
+                st.markdown("#### 📋 Governance Recommendations")
+                for rec in recs:
+                    priority = rec.get("priority", "LOW")
+                    icon = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡"}.get(priority, "🟢")
+                    st.markdown(
+                        f"{icon} **{rec['action'].upper()}** — `{rec.get('column', '')}` "
+                        f"({rec.get('table', '')}) — {rec.get('detail', '')}"
+                    )
+
+            # Masking controls
+            if pii_detections:
+                st.markdown("---")
+                st.markdown("#### 🎭 Active Governance Enforcement")
+
+                if st.button(
+                    "🎭 Apply Recommended Masking",
+                    type="primary",
+                    use_container_width=True,
+                    key="apply_masking",
+                ):
+                    from src.agents.masking_engine import apply_masking
+
+                    with st.spinner("Applying masking..."):
+                        result = apply_masking(pii_detections, db_path)
+                        st.session_state.masking_result = result
+
+                    if result.get("columns_masked"):
+                        st.success(
+                            f"Masked {len(result['columns_masked'])} column(s) "
+                            f"across {len(result['masked_tables'])} table(s)"
+                        )
+                    else:
+                        st.warning("No columns were masked — tables may not exist in DB yet.")
+
+                # Show masked preview
+                masking_result = st.session_state.get("masking_result")
+                if masking_result and masking_result.get("details"):
+                    st.markdown("**Masking Preview**")
+                    for d in masking_result["details"]:
+                        with st.expander(
+                            f"{d['column']} ({d['pii_type']}) — {d['table']}"
+                        ):
+                            c1, c2 = st.columns(2)
+                            c1.markdown("**Before**")
+                            for v in d["samples_before"]:
+                                c1.code(v)
+                            c2.markdown("**After**")
+                            for v in d["samples_after"]:
+                                c2.code(v)
+
+                    # Preview full masked table
+                    for tbl_name, mdf in masking_result.get("masked_tables", {}).items():
+                        with st.expander(f"📄 Full preview: {tbl_name}_masked ({len(mdf)} rows)"):
+                            st.dataframe(mdf.head(25), use_container_width=True, hide_index=True)
+
+                    # Persist button
+                    if st.button(
+                        "💾 Persist Masked Tables to Database",
+                        type="secondary",
+                        use_container_width=True,
+                        key="persist_masked",
+                    ):
+                        from src.agents.masking_engine import persist_masked_tables
+
+                        results = persist_masked_tables(
+                            masking_result["masked_tables"], db_path
+                        )
+                        for name, ok in results.items():
+                            if ok:
+                                st.success(f"✅ Persisted `{name}`")
+                            else:
+                                st.error(f"❌ Failed: `{name}`")
+
+    # =========================================================================
+    # TAB 7 — METADATA CATALOG
+    # =========================================================================
+    with tab_catalog:
+        st.subheader("📚 Governance Metadata Catalog")
+
+        db_path = getattr(_cfg, "DATABASE_PATH", "database/final.db")
+
+        if not os.path.exists(db_path):
+            st.info("No database found. Run the pipeline and governance agent first.")
+        else:
+            try:
+                conn = sqlite3.connect(db_path)
+
+                catalog_tables = [
+                    ("catalog_tables", "Table-level metadata"),
+                    ("catalog_columns", "Column-level metadata & PII tags"),
+                    ("lineage_edges", "Column lineage graph edges"),
+                    ("pii_tags", "Detected PII with confidence"),
+                    ("governance_reports", "Risk assessments & recommendations"),
+                ]
+
+                for tbl_name, description in catalog_tables:
+                    try:
+                        df = pd.read_sql_query(f'SELECT * FROM "{tbl_name}"', conn)
+                        with st.expander(
+                            f"📋 {tbl_name} — {description} ({len(df)} rows)",
+                            expanded=(len(df) > 0),
+                        ):
+                            if df.empty:
+                                st.caption("No data yet.")
+                            else:
+                                st.dataframe(df, use_container_width=True, hide_index=True)
+                    except Exception:
+                        with st.expander(f"📋 {tbl_name} — {description}"):
+                            st.caption("Table not created yet. Run the governance agent first.")
+
+                conn.close()
+            except Exception as e:
+                st.error(f"Database error: {e}")
+
+    # =========================================================================
+    # TAB 8 — LINEAGE GRAPH
+    # =========================================================================
+    with tab_graph:
+        st.subheader("📈 Lineage Visualization")
+
+        gov_result = st.session_state.get("gov_result")
+        if not gov_result:
+            st.info("Run the Lineage Analyzer first to generate lineage graph.")
+        else:
+            lineage = gov_result.get("lineage", {})
+            edges = lineage.get("edges", [])
+            pii_detections = gov_result.get("pii_detections", [])
+
+            if not edges:
+                st.warning("No lineage edges to visualize.")
+            else:
+                pii_cols = {
+                    (d["table"], d["column"]): d["pii_type"]
+                    for d in pii_detections
+                }
+
+                # ── Visual flow: Source → Target ──────────────────────
+                st.markdown("#### Data Flow")
+
+                # Group edges by source table → target table
+                flow_groups = {}
+                for e in edges:
+                    key = (e["src_table"], e["tgt_table"])
+                    flow_groups.setdefault(key, []).append(e)
+
+                for (src_tbl, tgt_tbl), group_edges in flow_groups.items():
+                    st.markdown(f"**{src_tbl}** → **{tgt_tbl}**")
+                    flow_rows = []
+                    for e in group_edges:
+                        src_pii = pii_cols.get((e["src_table"], e["src_col"]), "")
+                        tgt_pii = pii_cols.get((e["tgt_table"], e["tgt_col"]), "")
+                        flow_rows.append({
+                            "Source Column": f"{'🔐 ' if src_pii else ''}{e['src_col']}",
+                            "→": "→",
+                            "Target Column": f"{'🔐 ' if tgt_pii else ''}{e['tgt_col']}",
+                            "Transform": e.get("transform", "direct"),
+                            "PII": src_pii or tgt_pii or "—",
+                        })
+                    st.dataframe(
+                        pd.DataFrame(flow_rows),
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+
+                # ── Summary ──────────────────────────────────────────
+                st.markdown("---")
+                st.markdown("#### 📊 Lineage Summary")
+                summary_data = {
+                    "Source Tables": ", ".join(lineage.get("source_tables", [])),
+                    "Target Tables": ", ".join(lineage.get("target_tables", [])),
+                    "Total Edges": len(edges),
+                    "PII Columns": len(pii_cols),
+                    "Statements": lineage.get("statement_count", 0),
+                }
+                for k, v in summary_data.items():
+                    st.markdown(f"**{k}:** {v}")
 
 
 if __name__ == "__main__":
