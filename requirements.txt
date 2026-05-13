@@ -8,3 +8,4 @@ faker==22.2.0
 requests==2.31.0
 chardet>=5.0.0
 sqlglot>=25.0.0
+streamlit>=1.30.0
